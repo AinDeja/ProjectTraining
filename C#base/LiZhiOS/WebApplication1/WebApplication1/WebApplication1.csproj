@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{087B80E8-65F4-4745-A645-222925E88778}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LitJson">
+      <HintPath>.\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="microsoft.office.interop.excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>.\microsoft.office.interop.excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Index.aspx" />
+    <Content Include="Management\adminLogin.aspx" />
+    <Content Include="Management\adminMain.aspx" />
+    <Content Include="Management\adminSign.aspx" />
+    <Content Include="Management\adminSignView.aspx" />
+    <Content Include="Management\css\buttonStyle.css" />
+    <Content Include="Management\css\Sign.css" />
+    <Content Include="Management\js\Chart.js" />
+    <Content Include="Management\js\echarts.min.js" />
+    <Content Include="Management\js\ShowOutExcle.js" />
+    <Content Include="Management\js\ShowStatistics.js" />
+    <Content Include="Management\select_date\datedropper.css" />
+    <Content Include="Management\select_date\datedropper.min.js" />
+    <Content Include="Management\select_date\dd-icon\dd-icon.svg" />
+    <Content Include="Management\select_date\SelectDate.html" />
+    <Content Include="Management\select_date\jquery-1.12.3.min.js" />
+    <Content Include="Management\select_date\timedropper.min.css" />
+    <Content Include="Management\select_date\timedropper.min.js" />
+    <Content Include="Management\select_date\说明.htm" />
+    <Content Include="Management\select_date\说明.txt" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WEB\Admin\SignINmanage.aspx" />
+    <Content Include="WEB\CSS\Index\component.css" />
+    <Content Include="WEB\CSS\Index\demo.css" />
+    <Content Include="WEB\CSS\Index\normalize.css" />
+    <Content Include="WEB\CSS\Login.css" />
+    <Content Include="WEB\CSS\Register\demo.css" />
+    <Content Include="WEB\CSS\Register\sky-forms-ie8.css" />
+    <Content Include="WEB\CSS\Register\sky-forms.css" />
+    <Content Include="WEB\CSS\Signin\basictable.css" />
+    <Content Include="WEB\CSS\Signin\style.css" />
+    <Content Include="WEB\CSS\Signin\zzsc-demo.css" />
+    <Content Include="WEB\CSS\TestMain.css" />
+    <Content Include="WEB\fonts\codropsicons\license.txt" />
+    <Content Include="WEB\Images\Index\img\codrops_logo.png" />
+    <Content Include="WEB\Images\Index\img\imac.png" />
+    <Content Include="WEB\Images\Index\img\ipad.png" />
+    <Content Include="WEB\Images\Index\img\iphone.png" />
+    <Content Include="WEB\Images\Index\img\thumb1.png" />
+    <Content Include="WEB\Images\Index\img\thumb2.png" />
+    <Content Include="WEB\Images\Index\img\thumb3.png" />
+    <Content Include="WEB\Images\Index\img\thumb4.png" />
+    <Content Include="WEB\Images\Index\img\thumb5.png" />
+    <Content Include="WEB\Images\Index\img\thumb6.png" />
+    <Content Include="WEB\Images\Index\img\tLogo.gif" />
+    <Content Include="WEB\Images\Index\img\tLogo2.gif" />
+    <Content Include="WEB\Images\Index\tLogo.gif" />
+    <Content Include="WEB\Images\Register\bg-cyan.jpg" />
+    <Content Include="WEB\Images\Register\bg.jpg" />
+    <Content Include="WEB\JS\Border\DD_belatedPNG.js" />
+    <Content Include="WEB\JS\Border\fun.base.js" />
+    <Content Include="WEB\JS\Border\jQuery.js" />
+    <Content Include="WEB\JS\Border\script.js" />
+    <Content Include="WEB\JS\Index\classie.js" />
+    <Content Include="WEB\JS\Index\svganimations.js" />
+    <Content Include="WEB\JS\Index\svganimations2.js" />
+    <Content Include="WEB\JS\Index\svganimations3.js" />
+    <Content Include="WEB\JS\jquery-2.1.1.min.js" />
+    <Content Include="WEB\JS\Register\jquery-1.9.1.min.js" />
+    <Content Include="WEB\JS\Register\jquery.placeholder.min.js" />
+    <Content Include="WEB\JS\Register\jquery.validate.min.js" />
+    <Content Include="WEB\JS\Register\sky-forms-ie8.js" />
+    <Content Include="WEB\JS\Signin\jquery-2.1.1.min.js" />
+    <Content Include="WEB\JS\Signin\jquery.basictable.js" />
+    <Content Include="WEB\JS\Signin\jquery.basictable.min.js" />
+    <Content Include="WEB\Login.aspx" />
+    <Content Include="WEB\Login.html" />
+    <Content Include="Management\computer.html" />
+    <Content Include="Management\css\select.css" />
+    <Content Include="Management\css\style.css" />
+    <Content Include="Management\default.html" />
+    <Content Include="Management\editor\kindeditor.js" />
+    <Content Include="Management\editor\plugins\about.html" />
+    <Content Include="Management\editor\plugins\emoticons\etc_01.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_02.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_03.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_04.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_05.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_06.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_07.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_08.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_09.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_10.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_11.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_12.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_13.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_14.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_15.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_16.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_17.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_18.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_19.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_20.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_21.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_22.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_23.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_24.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_25.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_26.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_27.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_28.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_29.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_30.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_31.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_32.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_33.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_34.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_35.gif" />
+    <Content Include="Management\editor\plugins\emoticons\etc_36.gif" />
+    <Content Include="Management\editor\plugins\flash.html" />
+    <Content Include="Management\editor\plugins\image.html" />
+    <Content Include="Management\editor\plugins\link.html" />
+    <Content Include="Management\editor\plugins\media.html" />
+    <Content Include="Management\editor\plugins\plainpaste.html" />
+    <Content Include="Management\editor\plugins\remote_image.html" />
+    <Content Include="Management\editor\plugins\wordpaste.html" />
+    <Content Include="Management\editor\skins\default.css" />
+    <Content Include="Management\editor\skins\default.gif" />
+    <Content Include="Management\editor\skins\div.gif" />
+    <Content Include="Management\editor\skins\dl.gif" />
+    <Content Include="Management\editor\skins\editor.css" />
+    <Content Include="Management\editor\skins\ol.gif" />
+    <Content Include="Management\editor\skins\p.gif" />
+    <Content Include="Management\editor\skins\tinymce.css" />
+    <Content Include="Management\editor\skins\tinymce.gif" />
+    <Content Include="Management\editor\skins\ul.gif" />
+    <Content Include="Management\error.html" />
+    <Content Include="Management\filelist.html" />
+    <Content Include="Management\form.html" />
+    <Content Include="Management\images\001.jpg" />
+    <Content Include="Management\images\404.png" />
+    <Content Include="Management\images\add.png" />
+    <Content Include="Management\images\btnbg.png" />
+    <Content Include="Management\images\btnbg1.png" />
+    <Content Include="Management\images\btnbg2.png" />
+    <Content Include="Management\images\buttonbg.png" />
+    <Content Include="Management\images\c01.png" />
+    <Content Include="Management\images\c02.png" />
+    <Content Include="Management\images\c03.png" />
+    <Content Include="Management\images\cbg.png" />
+    <Content Include="Management\images\clist.png" />
+    <Content Include="Management\images\close.png" />
+    <Content Include="Management\images\close1.png" />
+    <Content Include="Management\images\cloud.png" />
+    <Content Include="Management\images\d01.png" />
+    <Content Include="Management\images\d02.png" />
+    <Content Include="Management\images\d03.png" />
+    <Content Include="Management\images\d04.png" />
+    <Content Include="Management\images\d05.png" />
+    <Content Include="Management\images\d06.png" />
+    <Content Include="Management\images\d07.png" />
+    <Content Include="Management\images\diskbg.png" />
+    <Content Include="Management\images\dp.png" />
+    <Content Include="Management\images\f01.png" />
+    <Content Include="Management\images\f02.png" />
+    <Content Include="Management\images\f03.png" />
+    <Content Include="Management\images\f04.png" />
+    <Content Include="Management\images\f05.png" />
+    <Content Include="Management\images\f06.png" />
+    <Content Include="Management\images\help.png" />
+    <Content Include="Management\images\i01.png" />
+    <Content Include="Management\images\i02.png" />
+    <Content Include="Management\images\i03.png" />
+    <Content Include="Management\images\i04.png" />
+    <Content Include="Management\images\i05.png" />
+    <Content Include="Management\images\i06.png" />
+    <Content Include="Management\images\i07.png" />
+    <Content Include="Management\images\i08.png" />
+    <Content Include="Management\images\i09.png" />
+    <Content Include="Management\images\iadd.png" />
+    <Content Include="Management\images\ibtnbg.png" />
+    <Content Include="Management\images\ico01.png" />
+    <Content Include="Management\images\ico02.png" />
+    <Content Include="Management\images\ico03.png" />
+    <Content Include="Management\images\ico04.png" />
+    <Content Include="Management\images\ico05.png" />
+    <Content Include="Management\images\ico06.png" />
+    <Content Include="Management\images\icon01.png" />
+    <Content Include="Management\images\icon02.png" />
+    <Content Include="Management\images\icon03.png" />
+    <Content Include="Management\images\icon04.png" />
+    <Content Include="Management\images\icon05.png" />
+    <Content Include="Management\images\icon06.png" />
+    <Content Include="Management\images\img01.png" />
+    <Content Include="Management\images\img02.png" />
+    <Content Include="Management\images\img03.png" />
+    <Content Include="Management\images\img04.png" />
+    <Content Include="Management\images\img05.png" />
+    <Content Include="Management\images\img06.png" />
+    <Content Include="Management\images\img07.png" />
+    <Content Include="Management\images\img08.png" />
+    <Content Include="Management\images\img09.png" />
+    <Content Include="Management\images\img10.png" />
+    <Content Include="Management\images\img11.png" />
+    <Content Include="Management\images\img12.png" />
+    <Content Include="Management\images\img13.png" />
+    <Content Include="Management\images\img14.png" />
+    <Content Include="Management\images\img15.png" />
+    <Content Include="Management\images\inputbg.gif" />
+    <Content Include="Management\images\itabbg.png" />
+    <Content Include="Management\images\itabbg1.png" />
+    <Content Include="Management\images\leftico.png" />
+    <Content Include="Management\images\leftico01.png" />
+    <Content Include="Management\images\leftico02.png" />
+    <Content Include="Management\images\leftico03.png" />
+    <Content Include="Management\images\leftico04.png" />
+    <Content Include="Management\images\leftline.gif" />
+    <Content Include="Management\images\leftmenubg.gif" />
+    <Content Include="Management\images\lefttop.gif" />
+    <Content Include="Management\images\libg.png" />
+    <Content Include="Management\images\light.png" />
+    <Content Include="Management\images\line.gif" />
+    <Content Include="Management\images\line1.png" />
+    <Content Include="Management\images\list.gif" />
+    <Content Include="Management\images\list1.gif" />
+    <Content Include="Management\images\list2.png" />
+    <Content Include="Management\images\loginbg1.png" />
+    <Content Include="Management\images\loginbg2.png" />
+    <Content Include="Management\images\loginbg3.png" />
+    <Content Include="Management\images\logininfo.png" />
+    <Content Include="Management\images\loginlogo.png" />
+    <Content Include="Management\images\loginpassword.png" />
+    <Content Include="Management\images\loginsj.png" />
+    <Content Include="Management\images\loginuser.png" />
+    <Content Include="Management\images\logo.png" />
+    <Content Include="Management\images\msg.png" />
+    <Content Include="Management\images\navbg.png" />
+    <Content Include="Management\images\next.gif" />
+    <Content Include="Management\images\pre.gif" />
+    <Content Include="Management\images\px.gif" />
+    <Content Include="Management\images\righttop.gif" />
+    <Content Include="Management\images\rlist.gif" />
+    <Content Include="Management\images\search.png" />
+    <Content Include="Management\images\sj.png" />
+    <Content Include="Management\images\sun.png" />
+    <Content Include="Management\images\t01.png" />
+    <Content Include="Management\images\t02.png" />
+    <Content Include="Management\images\t03.png" />
+    <Content Include="Management\images\t04.png" />
+    <Content Include="Management\images\t05.png" />
+    <Content Include="Management\images\tbg.png" />
+    <Content Include="Management\images\tcbg.gif" />
+    <Content Include="Management\images\th.gif" />
+    <Content Include="Management\images\ticon.png" />
+    <Content Include="Management\images\time.png" />
+    <Content Include="Management\images\toolbg.gif" />
+    <Content Include="Management\images\topbg.gif" />
+    <Content Include="Management\images\topleft.jpg" />
+    <Content Include="Management\images\topright.jpg" />
+    <Content Include="Management\images\ub1.png" />
+    <Content Include="Management\images\uew_icon.png" />
+    <Content Include="Management\images\uew_icon_hover.png" />
+    <Content Include="Management\images\ulist.png" />
+    <Content Include="Management\images\user.png" />
+    <Content Include="Management\images\userbg.png" />
+    <Content Include="Management\imglist.html" />
+    <Content Include="Management\imglist1.html" />
+    <Content Include="Management\imgtable.html" />
+    <Content Include="Management\index.html" />
+    <Content Include="Management\js\cloud.js" />
+    <Content Include="Management\js\format+zh_CN,default,corechart.I.js" />
+    <Content Include="Management\js\jquery.ba-resize.min.js" />
+    <Content Include="Management\js\jquery.gvChart-1.0.1.min.js" />
+    <Content Include="Management\js\jquery.idTabs.min.js" />
+    <Content Include="Management\js\jquery.js" />
+    <Content Include="Management\js\jsapi.js" />
+    <Content Include="Management\js\PIE.htc" />
+    <Content Include="Management\js\select-ui.min.js" />
+    <Content Include="Management\left.html" />
+    <Content Include="Management\login.html" />
+    <Content Include="Management\main.html" />
+    <Content Include="Management\right.html" />
+    <Content Include="Management\src\jquery.gvChart-1.0.1.js" />
+    <Content Include="Management\tab.html" />
+    <Content Include="Management\tools.html" />
+    <Content Include="Management\top.html" />
+    <Content Include="WEB\NetHelpers.aspx" />
+    <Content Include="WEB\PersonalInformation.html" />
+    <Content Include="WEB\Register.aspx" />
+    <Content Include="WEB\SignIN.aspx" />
+    <Content Include="WEB\SignIn.html" />
+    <Content Include="WEB\TestMain.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\B_User.cs" />
+    <Compile Include="BLL\Distinguish.cs" />
+    <Compile Include="BLL\LoginTip.cs" />
+    <Compile Include="BLL\OutForExcle.cs" />
+    <Compile Include="BLL\PageCtrl.cs" />
+    <Compile Include="DAL\sql.cs" />
+    <Compile Include="DAL\T_SignIN.cs" />
+    <Compile Include="DAL\T_User.cs" />
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\adminLogin.aspx.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\adminLogin.aspx.designer.cs">
+      <DependentUpon>adminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\adminMain.aspx.cs">
+      <DependentUpon>adminMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\adminMain.aspx.designer.cs">
+      <DependentUpon>adminMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\adminSign.aspx.cs">
+      <DependentUpon>adminSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\adminSign.aspx.designer.cs">
+      <DependentUpon>adminSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\adminSignView.aspx.cs">
+      <DependentUpon>adminSignView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\adminSignView.aspx.designer.cs">
+      <DependentUpon>adminSignView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\AJAX\OutExcle.ashx.cs">
+      <DependentUpon>OutExcle.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\AJAX\ShowStatistics.ashx.cs">
+      <DependentUpon>ShowStatistics.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Seat.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WEB\Admin\SignINmanage.aspx.cs">
+      <DependentUpon>SignINmanage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Admin\SignINmanage.aspx.designer.cs">
+      <DependentUpon>SignINmanage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\NetHelpers.aspx.cs">
+      <DependentUpon>NetHelpers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\NetHelpers.aspx.designer.cs">
+      <DependentUpon>NetHelpers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\SignIN.aspx.cs">
+      <DependentUpon>SignIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\SignIN.aspx.designer.cs">
+      <DependentUpon>SignIN.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Management\select_date\dd-icon\dd-icon.eot" />
+    <Content Include="Management\select_date\dd-icon\dd-icon.ttf" />
+    <Content Include="Management\select_date\dd-icon\dd-icon.woff" />
+    <Content Include="Management\AJAX\OutExcle.ashx" />
+    <Content Include="Management\AJAX\ShowStatistics.ashx" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WEB\fonts\codropsicons\codropsicons.eot" />
+    <None Include="WEB\fonts\codropsicons\codropsicons.svg" />
+    <None Include="WEB\fonts\codropsicons\codropsicons.ttf" />
+    <None Include="WEB\fonts\codropsicons\codropsicons.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1529</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

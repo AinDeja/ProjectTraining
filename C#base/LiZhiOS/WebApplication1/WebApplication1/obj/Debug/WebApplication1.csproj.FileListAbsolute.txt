@@ -1,0 +1,13 @@
+D:\Website\LiZhiOS\WebApplication1\WebApplication1\bin\WebApplication1.dll
+D:\Website\LiZhiOS\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+D:\Website\LiZhiOS\WebApplication1\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\Website\LiZhiOS\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+D:\Website\LiZhiOS\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+G:\。NET\LIZHIOS\LiZhiOS BEAT\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+G:\。NET\LIZHIOS\LiZhiOS BEAT\WebApplication1\WebApplication1\bin\WebApplication1.dll
+G:\。NET\LIZHIOS\LiZhiOS BEAT\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+G:\。NET\LIZHIOS\LiZhiOS BEAT\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+G:\。NET\LIZHIOS\LiZhiOS BEAT\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+G:\。NET\LIZHIOS\LiZhiOS BEAT\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+G:\。NET\LIZHIOS\LiZhiOS BEAT\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.ResolveComReference.cache
+G:\。NET\LIZHIOS\LiZhiOS BEAT\WebApplication1\WebApplication1\bin\LitJson.dll
