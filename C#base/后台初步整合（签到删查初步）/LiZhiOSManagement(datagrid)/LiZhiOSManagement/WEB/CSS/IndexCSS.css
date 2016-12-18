@@ -1,0 +1,73 @@
+#menu{
+    position:relative;
+    float:left;
+}
+.menu{
+    padding:0px;
+    border-width:0px;
+}
+.guid li{
+    float:left;
+    
+}
+.am li a{
+    text-decoration:none;
+}
+.am li{
+    list-style-type:none;
+    text-align:center;
+
+}
+#tt tr th{
+    text-align:center;
+}
+
+/*.tt td{
+
+    border:solid #A9FACD;
+    border-width:0px 1px 1px 0px;
+    text-align:center;
+    width:50px;
+    height:30px;
+    
+
+
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+    padding:2px;
+}
+#tt{
+    height:100%;
+    width:100%;
+    background-color: #ffffff; 
+    border:solid #A9FACD;
+    border-width:1px 0px 0px 1px;
+
+    border-collapse: collapse;
+    table-layout:fixed;
+}
+
+
+
+.exchange{
+    background-color:#A9FACD;                    /*供点击的效果(表格中)*/
+/*}*/
+
+
+    /*.tt tr:active {
+    background-color:red;                              
+    }*/
+
+/*当toggle没有效果时，使用下面的*/
+/*.changecolor{
+    background-color:#D0F79C!important;         
+}*/
+
+
+#pp{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+

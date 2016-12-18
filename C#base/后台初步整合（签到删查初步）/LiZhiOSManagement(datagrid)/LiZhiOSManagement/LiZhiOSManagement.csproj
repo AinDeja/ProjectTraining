@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F45F22E-5E01-47CA-B1D3-81AD4D36EC71}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiZhiOSManagement</RootNamespace>
+    <AssemblyName>LiZhiOSManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode>true</IISExpressUseClassicPipelineMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="microsoft.office.interop.excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>G:\。NET\LIZHIOS\LiZhiOS BEAT\WebApplication1\WebApplication1\microsoft.office.interop.excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>NPOI\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NPOI\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="NPOI\NPOI.dll" />
+    <Content Include="NPOI\NPOI.OOXML.dll" />
+    <Content Include="NPOI\NPOI.OpenXml4Net.dll" />
+    <Content Include="NPOI\NPOI.OpenXmlFormats.dll" />
+    <Content Include="NPOI\NPOI.XML" />
+    <Content Include="WEB\CSS\buttonStyle.css" />
+    <Content Include="WEB\JS\echarts.js" />
+    <Content Include="WEB\OutSignOfExcle.aspx" />
+    <Content Include="WEB\adminSignView.aspx" />
+    <Content Include="WEB\CSS\SignStyle.css" />
+    <Content Include="WEB\CSS\SignTable.css" />
+    <Content Include="WEB\SignCartogram.aspx" />
+    <Content Include="WEB\SignManagersTable.aspx" />
+    <Content Include="WEB\AllManagersTable.aspx" />
+    <Content Include="WEB\AllUsersTable.aspx" />
+    <Content Include="WEB\AndroidArticle.aspx" />
+    <Content Include="WEB\AndroidManagersTable.aspx" />
+    <Content Include="WEB\AndroidUsersTable.aspx" />
+    <Content Include="WEB\ArticleAnalysis.aspx" />
+    <Content Include="WEB\BackendLogin.aspx" />
+    <Content Include="WEB\CommentTable.aspx" />
+    <Content Include="WEB\CSS\bootstrap.min.css" />
+    <Content Include="WEB\CSS\IndexCSS.css" />
+    <Content Include="WEB\CSS\luntan.css" />
+    <Content Include="WEB\CSS\smohan.share.css" />
+    <Content Include="WEB\CSS\style.css" />
+    <Content Include="WEB\Front-end.aspx" />
+    <Content Include="WEB\Front-endManagersTable.aspx" />
+    <Content Include="WEB\Front-endUsersTable.aspx" />
+    <Content Include="WEB\GenderAnalysis.aspx" />
+    <Content Include="WEB\JQueryEasyUI\datagrid-detailview.js\datagrid-detailview.js" />
+    <Content Include="WEB\JQueryEasyUI\jquery.easyui.min.js" />
+    <Content Include="WEB\JQueryEasyUI\jquery.min.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-af.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-ar.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-bg.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-ca.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-cs.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-cz.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-da.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-de.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-el.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-en.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-es.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-fr.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-it.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-jp.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-nl.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-pl.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-pt_BR.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-ru.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-sv_SE.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-tr.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-zh_CN.js" />
+    <Content Include="WEB\JQueryEasyUI\locale\easyui-lang-zh_TW.js" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\accordion.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\calendar.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\combo.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\combobox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\datagrid.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\datebox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\dialog.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\easyui.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\accordion_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\blank.gif" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\calendar_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\combo_arrow.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\datagrid_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\datebox_arrow.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\layout_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\linkbutton_bg.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\loading.gif" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\menu_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\messager_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\pagination_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\panel_tools.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\searchbox_button.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\slider_handle.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\spinner_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\tabs_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\tree_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\images\validatebox_warning.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\layout.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\linkbutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\menu.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\menubutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\messager.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\numberbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\pagination.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\panel.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\progressbar.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\propertygrid.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\searchbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\slider.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\spinner.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\splitbutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\tabs.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\textbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\tooltip.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\tree.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\validatebox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\black\window.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\accordion.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\calendar.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\combo.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\combobox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\datagrid.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\datebox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\dialog.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\easyui.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\accordion_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\blank.gif" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\calendar_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\combo_arrow.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\datagrid_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\datebox_arrow.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\layout_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\linkbutton_bg.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\loading.gif" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\menu_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\messager_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\pagination_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\panel_tools.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\searchbox_button.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\slider_handle.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\spinner_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\tabs_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\tree_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\images\validatebox_warning.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\layout.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\linkbutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\menu.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\menubutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\messager.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\numberbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\pagination.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\panel.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\progressbar.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\propertygrid.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\searchbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\slider.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\spinner.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\splitbutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\tabs.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\textbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\tooltip.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\tree.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\validatebox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\bootstrap\window.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\accordion.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\calendar.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\combo.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\combobox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\datagrid.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\datebox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\dialog.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\easyui.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\accordion_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\blank.gif" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\calendar_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\combo_arrow.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\datagrid_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\datebox_arrow.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\layout_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\linkbutton_bg.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\loading.gif" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\menu_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\messager_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\pagination_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\panel_tools.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\searchbox_button.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\slider_handle.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\spinner_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\tabs_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\tree_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\images\validatebox_warning.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\layout.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\linkbutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\menu.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\menubutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\messager.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\numberbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\pagination.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\panel.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\progressbar.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\propertygrid.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\searchbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\slider.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\spinner.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\splitbutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\tabs.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\textbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\tooltip.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\tree.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\validatebox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\default\window.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\accordion.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\calendar.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\combo.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\combobox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\datagrid.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\datebox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\dialog.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\easyui.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\accordion_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\blank.gif" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\calendar_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\combo_arrow.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\datagrid_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\datebox_arrow.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\layout_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\linkbutton_bg.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\loading.gif" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\menu_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\messager_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\pagination_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\panel_tools.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\searchbox_button.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\slider_handle.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\spinner_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\tabs_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\tree_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\images\validatebox_warning.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\layout.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\linkbutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\menu.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\menubutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\messager.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\numberbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\pagination.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\panel.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\progressbar.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\propertygrid.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\searchbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\slider.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\spinner.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\splitbutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\tabs.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\textbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\tooltip.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\tree.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\validatebox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\gray\window.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\icon.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\chart_pie.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\excel.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\back.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\blank.gif" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\cancel.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\cut.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\edit_add.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\edit_remove.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\filesave.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\filter.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\help.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\house.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\large_chart.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\large_clipart.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\large_picture.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\large_shapes.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\large_smartart.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\mini_add.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\mini_edit.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\mini_refresh.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\no.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\ok.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\pencil.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\print.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\redo.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\reload.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\search.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\sum.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\tip.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\icons\undo.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\accordion.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\calendar.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\combo.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\combobox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\datagrid.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\datebox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\dialog.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\easyui.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\accordion_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\blank.gif" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\calendar_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\combo_arrow.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\datagrid_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\datebox_arrow.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\layout_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\linkbutton_bg.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\loading.gif" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\menu_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\messager_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\pagination_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\panel_tools.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\searchbox_button.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\slider_handle.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\spinner_arrows.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\tabs_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\tree_icons.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\images\validatebox_warning.png" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\layout.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\linkbutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\menu.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\menubutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\messager.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\numberbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\pagination.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\panel.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\progressbar.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\propertygrid.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\searchbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\slider.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\spinner.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\splitbutton.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\tabs.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\textbox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\tooltip.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\tree.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\validatebox.css" />
+    <Content Include="WEB\JQueryEasyUI\themes\metro\window.css" />
+    <Content Include="WEB\JQueryEasyUI\引用.png" />
+    <Content Include="WEB\JS\dist\chart\bar.js" />
+    <Content Include="WEB\JS\dist\chart\chord.js" />
+    <Content Include="WEB\JS\dist\chart\eventRiver.js" />
+    <Content Include="WEB\JS\dist\chart\force.js" />
+    <Content Include="WEB\JS\dist\chart\funnel.js" />
+    <Content Include="WEB\JS\dist\chart\gauge.js" />
+    <Content Include="WEB\JS\dist\chart\heatmap.js" />
+    <Content Include="WEB\JS\dist\chart\k.js" />
+    <Content Include="WEB\JS\dist\chart\line.js" />
+    <Content Include="WEB\JS\dist\chart\map.js" />
+    <Content Include="WEB\JS\dist\chart\pie.js" />
+    <Content Include="WEB\JS\dist\chart\radar.js" />
+    <Content Include="WEB\JS\dist\chart\scatter.js" />
+    <Content Include="WEB\JS\dist\chart\tree.js" />
+    <Content Include="WEB\JS\dist\chart\treemap.js" />
+    <Content Include="WEB\JS\dist\chart\venn.js" />
+    <Content Include="WEB\JS\dist\chart\wordCloud.js" />
+    <Content Include="WEB\JS\dist\echarts-all.js" />
+    <Content Include="WEB\JS\dist\echarts.js" />
+    <Content Include="WEB\JS\IndexJS.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WEB\Index.aspx" />
+    <Content Include="WEB\JS\jquery.js" />
+    <Content Include="WEB\JS\Particleground.js" />
+    <Content Include="WEB\JS\verificationNumbers.js" />
+    <Content Include="WEB\MessagesTable.aspx" />
+    <Content Include="WEB\NetArticle.aspx" />
+    <Content Include="WEB\NetManagersTable.aspx" />
+    <Content Include="WEB\NetUsersTable.aspx" />
+    <Content Include="WEB\SuperManagersTable.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\AddArticleByManagersBLL.cs" />
+    <Compile Include="BLL\AddManagerBLL.cs" />
+    <Compile Include="BLL\AddUsersByManagerBLL.cs" />
+    <Compile Include="BLL\DeleteArticleAndCommentBLL.cs" />
+    <Compile Include="BLL\DeleteSignBLL.cs" />
+    <Compile Include="BLL\DeleteUserAndArticlesAndCommentsBLL.cs" />
+    <Compile Include="BLL\OutForExcle.cs" />
+    <Compile Include="BLL\PageCtrl.cs" />
+    <Compile Include="BLL\ShowArticleByGroupBLL.cs" />
+    <Compile Include="BLL\ShowCommentsBLL.cs" />
+    <Compile Include="BLL\ShowManagersMessagesBLL.cs" />
+    <Compile Include="BLL\ShowMessagesBLL.cs" />
+    <Compile Include="BLL\ShowSignInByDateBLL.cs" />
+    <Compile Include="BLL\ShowUsersMessagesBLL.cs" />
+    <Compile Include="DAL\AddArticleByManagersDAL.cs" />
+    <Compile Include="DAL\AddManagerDAL.cs" />
+    <Compile Include="DAL\AddUsersByManagerDAL.cs" />
+    <Compile Include="DAL\DeleteArticleAndCommentDAL.cs" />
+    <Compile Include="DAL\DeleteUserAndArticlesAndCommentsDAL.cs" />
+    <Compile Include="DAL\ShowArticleByGroupDAL.cs" />
+    <Compile Include="DAL\ShowCommentsDAL.cs" />
+    <Compile Include="DAL\ShowManagersMessagesDAL.cs" />
+    <Compile Include="DAL\ShowMessagesDAL.cs" />
+    <Compile Include="DAL\ShowSignInByDateDAL.cs" />
+    <Compile Include="DAL\ShowUsersMessagesDAL.cs" />
+    <Compile Include="DAL\sql.cs" />
+    <Compile Include="DAL\T_SignIN.cs" />
+    <Compile Include="DAL\T_User.cs" />
+    <Compile Include="Model\Article.cs" />
+    <Compile Include="Model\BelongKindCount.cs" />
+    <Compile Include="Model\Managers.cs" />
+    <Compile Include="Model\Messages.cs" />
+    <Compile Include="Model\Seat.cs" />
+    <Compile Include="Model\Sign.cs" />
+    <Compile Include="Model\SqlHelper.cs" />
+    <Compile Include="Model\SuperManagers.cs" />
+    <Compile Include="Model\Users.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WEB\Ajax\DeleteSign.ashx.cs">
+      <DependentUpon>DeleteSign.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\SearchSign.ashx.cs">
+      <DependentUpon>SearchSign.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\SelectSignForEdit.ashx.cs">
+      <DependentUpon>SelectSignForEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\ShowStatistics.ashx.cs">
+      <DependentUpon>ShowStatistics.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\SignExcleOutPut.ashx.cs">
+      <DependentUpon>SignExcleOutPut.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\OutSignOfExcle.aspx.cs">
+      <DependentUpon>OutSignOfExcle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\OutSignOfExcle.aspx.designer.cs">
+      <DependentUpon>OutSignOfExcle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\adminSignView.aspx.cs">
+      <DependentUpon>adminSignView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\adminSignView.aspx.designer.cs">
+      <DependentUpon>adminSignView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\TableBySign.ashx.cs">
+      <DependentUpon>TableBySign.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\SignCartogram.aspx.cs">
+      <DependentUpon>SignCartogram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\SignCartogram.aspx.designer.cs">
+      <DependentUpon>SignCartogram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\SignManagersTable.aspx.cs">
+      <DependentUpon>SignManagersTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\SignManagersTable.aspx.designer.cs">
+      <DependentUpon>SignManagersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\AddManagers.ashx.cs">
+      <DependentUpon>AddManagers.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\AddMessages.ashx.cs">
+      <DependentUpon>AddMessages.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\AddUsersByManager.ashx.cs">
+      <DependentUpon>AddUsersByManager.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\AllManagersTable.aspx.cs">
+      <DependentUpon>AllManagersTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\AllManagersTable.aspx.designer.cs">
+      <DependentUpon>AllManagersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\AllUsersTable.aspx.cs">
+      <DependentUpon>AllUsersTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\AllUsersTable.aspx.designer.cs">
+      <DependentUpon>AllUsersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\AndroidArticle.aspx.cs">
+      <DependentUpon>AndroidArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\AndroidArticle.aspx.designer.cs">
+      <DependentUpon>AndroidArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\AndroidManagersTable.aspx.cs">
+      <DependentUpon>AndroidManagersTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\AndroidManagersTable.aspx.designer.cs">
+      <DependentUpon>AndroidManagersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\AndroidUsersTable.aspx.cs">
+      <DependentUpon>AndroidUsersTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\AndroidUsersTable.aspx.designer.cs">
+      <DependentUpon>AndroidUsersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\ArticleAnalysis.aspx.cs">
+      <DependentUpon>ArticleAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\ArticleAnalysis.aspx.designer.cs">
+      <DependentUpon>ArticleAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\ArticleAnalysisAjax.ashx.cs">
+      <DependentUpon>ArticleAnalysisAjax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\ArticleExcelOutPut.ashx.cs">
+      <DependentUpon>ArticleExcelOutPut.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\BackendLogin.aspx.cs">
+      <DependentUpon>BackendLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\BackendLogin.aspx.designer.cs">
+      <DependentUpon>BackendLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\CommentTable.aspx.cs">
+      <DependentUpon>CommentTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\CommentTable.aspx.designer.cs">
+      <DependentUpon>CommentTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\DeleteArticleAndComments.ashx.cs">
+      <DependentUpon>DeleteArticleAndComments.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\DeleteArticleAndCommentsbyDataGrid.ashx.cs">
+      <DependentUpon>DeleteArticleAndCommentsbyDataGrid.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\DeleteByAllComments.ashx.cs">
+      <DependentUpon>DeleteByAllComments.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\DeleteByComments.ashx.cs">
+      <DependentUpon>DeleteByComments.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\DeleteManager.ashx.cs">
+      <DependentUpon>DeleteManager.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\DeleteUser.ashx.cs">
+      <DependentUpon>DeleteUser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Front-end.aspx.cs">
+      <DependentUpon>Front-end.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Front-end.aspx.designer.cs">
+      <DependentUpon>Front-end.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Front-endManagersTable.aspx.cs">
+      <DependentUpon>Front-endManagersTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Front-endManagersTable.aspx.designer.cs">
+      <DependentUpon>Front-endManagersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Front-endUsersTable.aspx.cs">
+      <DependentUpon>Front-endUsersTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Front-endUsersTable.aspx.designer.cs">
+      <DependentUpon>Front-endUsersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\GenderAnalysis.aspx.cs">
+      <DependentUpon>GenderAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\GenderAnalysis.aspx.designer.cs">
+      <DependentUpon>GenderAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\GenderAnalysisAjax.ashx.cs">
+      <DependentUpon>GenderAnalysisAjax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\MessagesTable.aspx.cs">
+      <DependentUpon>MessagesTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\MessagesTable.aspx.designer.cs">
+      <DependentUpon>MessagesTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\NetArticle.aspx.cs">
+      <DependentUpon>NetArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\NetArticle.aspx.designer.cs">
+      <DependentUpon>NetArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\NetManagersTable.aspx.cs">
+      <DependentUpon>NetManagersTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\NetManagersTable.aspx.designer.cs">
+      <DependentUpon>NetManagersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\NetUsersTable.aspx.cs">
+      <DependentUpon>NetUsersTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\NetUsersTable.aspx.designer.cs">
+      <DependentUpon>NetUsersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\ManagersExcelOutPut.ashx.cs">
+      <DependentUpon>ManagersExcelOutPut.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\SaveEditManagers.ashx.cs">
+      <DependentUpon>SaveEditManagers.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\SaveEditMessages.ashx.cs">
+      <DependentUpon>SaveEditMessages.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\SaveEditUsers.ashx.cs">
+      <DependentUpon>SaveEditUsers.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\SelectArticleContent.ashx.cs">
+      <DependentUpon>SelectArticleContent.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\SelectByInputArticle.ashx.cs">
+      <DependentUpon>SelectByInputArticle.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\SelectTimeForEdit.ashx.cs">
+      <DependentUpon>SelectTimeForEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\SelectTimeForManagersEdit.ashx.cs">
+      <DependentUpon>SelectTimeForManagersEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\SelectTimeForUsersEdit.ashx.cs">
+      <DependentUpon>SelectTimeForUsersEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\ShowComments.ashx.cs">
+      <DependentUpon>ShowComments.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\ShowSuperManagers.ashx.cs">
+      <DependentUpon>ShowSuperManagers.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\SuperManagersTable.aspx.cs">
+      <DependentUpon>SuperManagersTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\SuperManagersTable.aspx.designer.cs">
+      <DependentUpon>SuperManagersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\TableByDatagrid.ashx.cs">
+      <DependentUpon>TableByDatagrid.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\TableByManagersDatagrid.ashx.cs">
+      <DependentUpon>TableByManagersDatagrid.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\TableByUsersDatagrid.ashx.cs">
+      <DependentUpon>TableByUsersDatagrid.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Ajax\UsersExcelOutPut.ashx.cs">
+      <DependentUpon>UsersExcelOutPut.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WEB\Ajax\SelectArticleContent.ashx" />
+    <Content Include="WEB\Ajax\TableByDatagrid.ashx" />
+    <Content Include="WEB\Ajax\TableByUsersDatagrid.ashx" />
+    <Content Include="WEB\Ajax\TableByManagersDatagrid.ashx" />
+    <Content Include="WEB\Ajax\ShowComments.ashx" />
+    <Content Include="WEB\Ajax\DeleteArticleAndComments.ashx" />
+    <Content Include="WEB\Ajax\DeleteByComments.ashx" />
+    <Content Include="WEB\Ajax\DeleteByAllComments.ashx" />
+    <Content Include="WEB\Ajax\AddMessages.ashx" />
+    <Content Include="WEB\Ajax\DeleteArticleAndCommentsbyDataGrid.ashx" />
+    <Content Include="WEB\Ajax\SelectTimeForEdit.ashx" />
+    <Content Include="WEB\Ajax\SaveEditMessages.ashx" />
+    <Content Include="WEB\Ajax\DeleteUser.ashx" />
+    <Content Include="WEB\Ajax\AddUsersByManager.ashx" />
+    <Content Include="WEB\Ajax\SelectTimeForUsersEdit.ashx" />
+    <Content Include="WEB\Ajax\SaveEditUsers.ashx" />
+    <Content Include="WEB\Ajax\ShowSuperManagers.ashx" />
+    <Content Include="WEB\Ajax\SelectTimeForManagersEdit.ashx" />
+    <Content Include="WEB\Ajax\SaveEditManagers.ashx" />
+    <Content Include="WEB\Ajax\AddManagers.ashx" />
+    <Content Include="WEB\Ajax\DeleteManager.ashx" />
+    <Content Include="WEB\Ajax\GenderAnalysisAjax.ashx" />
+    <Content Include="WEB\Ajax\SelectByInputArticle.ashx" />
+    <Content Include="WEB\Ajax\ManagersExcelOutPut.ashx" />
+    <Content Include="WEB\Ajax\ArticleExcelOutPut.ashx" />
+    <Content Include="WEB\Ajax\UsersExcelOutPut.ashx" />
+    <Content Include="WEB\Ajax\ArticleAnalysisAjax.ashx" />
+    <Content Include="WEB\Ajax\TableBySign.ashx" />
+    <Content Include="WEB\Ajax\SignExcleOutPut.ashx" />
+    <Content Include="WEB\Ajax\ShowStatistics.ashx" />
+    <Content Include="WEB\Ajax\DeleteSign.ashx" />
+    <Content Include="WEB\Ajax\SelectSignForEdit.ashx" />
+    <Content Include="WEB\Ajax\SearchSign.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OutExcel\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27934</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:27918/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
