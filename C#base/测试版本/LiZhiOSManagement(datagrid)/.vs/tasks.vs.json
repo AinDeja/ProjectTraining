@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "任务-Index",
+      "appliesTo": "LiZhiOSManagement/BackstageWEB/Index.aspx",
+      "type": "command"
+    },
+    {
+      "taskName": "任务-Index",
+      "appliesTo": "LiZhiOSManagement/BackstageWEB/Index.aspx",
+      "type": "command"
+    }
+  ]
+}

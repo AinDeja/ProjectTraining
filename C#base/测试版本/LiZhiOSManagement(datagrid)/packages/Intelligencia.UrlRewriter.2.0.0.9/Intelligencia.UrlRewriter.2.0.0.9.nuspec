@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Intelligencia.UrlRewriter</id>
+    <version>2.0.0.9</version>
+    <title>UrlRewriter</title>
+    <authors>sergey.p</authors>
+    <owners>sergey.p</owners>
+    <licenseUrl>https://github.com/sethyates/urlrewriter/blob/master/License.txt</licenseUrl>
+    <projectUrl>http://urlrewriter.net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>UrlRewriter.NET is an open-source, light-weight, highly configurable URL rewriting component for ASP.NET 1.1 – 4.0. UrlRewriter.NET provides similar IIS Rewrite capabilities that the Apache web server provides with mod_rewrite and .htaccess. You don’t need to install an ISAPI Rewrite filter to use the component.</description>
+    <summary>UrlRewriter - a rule-based URL Rewriter for .NET. Copyright (c)2011 Seth Yates Author Seth Yates Author Stewart Rae Version 2.1</summary>
+    <copyright>Copyright (c) 2011 Seth Yates</copyright>
+    <tags>Intelligencia UrlRewriter SethYates</tags>
+  </metadata>
+</package>
