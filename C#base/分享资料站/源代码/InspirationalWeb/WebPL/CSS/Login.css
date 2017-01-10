@@ -1,0 +1,42 @@
+﻿
+li {
+    list-style:none;
+}
+
+#divLogin {
+
+    border:1px solid #66D9EF;
+    background: #fff;
+	position:absolute; 
+    top:50%;
+    left:50%;          
+	margin:-200px 0 0 -175px;
+    width: 400px;
+    height: 350px;
+}
+#divLogin img {
+    margin-left: 150px;
+    margin-top: 10px;
+}
+#divLogin form {
+    margin-left: 70px;
+    margin-top: 30px;
+    line-height: 50px;
+    font-size: 20px;
+}
+#divLogin table td.text{
+	width:400px;
+}
+#divLogin input {
+    margin-top: 10px;
+    height: 30px;
+    font-size: 16px;
+}
+.divLogin {
+float:right;
+margin-right:20px;
+}
+.button {
+    float:right;
+}
+  }

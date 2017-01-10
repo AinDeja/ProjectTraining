@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<head>
+	
+	<title>Services - Black White HTML5 Template</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">	
+
+
+    <link href="css/blue.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="js/lrc.js"></script>
+
+    <style type="text/css">
+        /** {
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+
+        ul, ol, dl {
+            list-style: none;
+        }*/
+
+        .music_box {
+            margin: 50px auto;
+            width: 422px;
+        }
+
+        .content {
+            width: 420px;
+            height: 320px;
+            overflow: hidden;
+            padding: 10px;
+            background:#ccc;
+        }
+
+        #lrc_list {
+            margin: 10px auto;
+            background: #ccc;
+        }
+
+            #lrc_list li {
+                font: normal 14px/2.1 'microsoft yahei';
+                text-align: center;
+            }
+
+                #lrc_list li.hover {
+                    color: red;
+                    font-weight: bold;
+                }
+        #BigBox {
+            width:500px;
+            height:600px;
+            
+
+        }
+    </style>
+
+    <script>
+        //<![CDATA[
+        $(document).ready(function () {
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function (event) {
+                    $(this).jPlayer("setMedia", {
+                        mp3: "music/遇见我.mp3" //mp3的播放地址
+                    });
+                },
+                timeupdate: function (event) {
+                    if (event.jPlayer.status.currentTime == 0) {
+                        time = "";
+                    } else {
+                        time = event.jPlayer.status.currentTime;
+                    }
+                },
+                play: function (event) {
+                    //点击开始方法调用lrc。start歌词方法 返回时间time
+                    $.lrc.start($('#lrc_content').val(), function () {
+                        return time;
+                    });
+                },
+                ended: function (event) {
+                    $("#lrc_list").removeAttr("style").html("<li>歌曲播放完毕！</li>");
+                },
+                swfPath: "/js",  		//存放jplayer.swf的决定路径
+                solution: "html, flash", //支持的页面
+                supplied: "mp3",		//支持的音频的格式
+                wmode: "window"
+            });
+        });
+        //]]>
+    </script>
+
+</head>
+<body>
+	<div class="templatemo-logo visible-xs-block">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg logo-left-container">
+			<h1 class="logo-left">Black</h1>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg logo-right-container">
+			<h1 class="logo-right">White</h1>
+		</div>			
+	</div>
+	<div class="templatemo-container">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg left-container">
+			<h1 class="logo-left hidden-xs margin-bottom-60">呆熊</h1>	
+			<div class="tm-left-inner-container">
+				<ul class="nav nav-stacked templatemo-nav">
+				  <li><a href="index.html"><i class="fa fa-home fa-medium"></i>有关分享</a></li>
+				  <li><a href="products.html"><i class="fa fa-shopping-cart fa-medium"></i>文章</a></li>
+				  <li><a href="services.html" class="active"><i class="fa fa-send-o fa-medium"></i>音乐</a></li>
+				  <li><a href="testimonials.html"><i class="fa fa-comments-o fa-medium"></i>视频</a></li>
+				</ul>
+			</div>
+		</div> <!-- left section -->
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg right-container">
+			<h1 class="logo-right hidden-xs margin-bottom-60">周分享</h1>
+           
+                <div class="tm-right-inner-container">
+                    <!--<h1 class="templatemo-header">Services</h1>
+            <div class="row">
+                <article class="templatemo-item col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h2>Cloud Storage</h2>
+                    <div class="text-center">
+                        <i class="fa fa-cloud templatemo-service-icon"></i>
+                    </div>
+                    <p>You can easily change icons by <a rel="nofollow" href="http://fontawesome.info/font-awesome-icon-world-map/">Font Awesome</a>. Example: <strong>&lt;i class=&quot;fa fa-video-camera&quot;&gt;&lt;/i&gt;</strong> Etiam blandit sem vel lacinia interdum. Curabitur ut erat sed dui pulvinar tincidunt. Mauris vulputate dolor nibh, vel sodales urna eleifend id. Vestibulum varius nibh ut diam commodo, sed volutpat libero pretium. Cras bibendum porta purus feugiat scelerisque.</p>
+                </article>
+                <article class="templatemo-item col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h2>Database Server</h2>
+                    <div class="text-center">
+                        <i class="fa fa-database templatemo-service-icon"></i>
+                    </div>
+                    <p>Maecenas in arcu eget velit lobortis dictum. Donec venenatis, justo quis efficitur pharetra, ligula ante pellentesque purus, sit amet tincidunt mauris elit non est. Etiam auctor, dui ut vehicula convallis, leo purus gravida massa, sed aliquet dui tellus rhoncus magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+            </div>
+            <div class="row">
+                <article class="templatemo-item col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h2>Mobile Friendly</h2>
+                    <div class="text-center">
+                        <i class="fa fa-mobile templatemo-service-icon"></i>
+                    </div>
+                    <p>Black White is <a href="#">free responsive template</a> by <span class="blue">template</span><span class="green">mo</span>. Etiam aliquet risus purus, at bibendum libero tempus sit amet. Pellentesque imperdiet, erat in finibus volutpat, nisi dui mattis erat, eu elementum libero mauris lobortis odio. Ut at purus mollis, rutrum augue quis, sollicitudin massa. Integer neque augue, lobortis at leo at, blandit euismod nunc.
+                    </p>
+                </article>
+                <article class="templatemo-item col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h2>Portable Apps</h2>
+                    <div class="text-center">
+                        <i class="fa fa-laptop templatemo-service-icon"></i>
+                    </div>
+                    <p>Etiam aliquet risus purus, at bibendum libero tempus sit amet. Pellentesque imperdiet, erat in finibus volutpat, nisi dui mattis erat, eu elementum libero mauris lobortis odio. Ut at purus mollis, rutrum augue quis, sollicitudin massa. Integer neque augue, lobortis at leo at, blandit euismod nunc.</p>
+                </article>
+            </div>--><div id="BigBox">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <textarea id="lrc_content" name="textfield" cols="70" rows="10" style="display:none;">
+                        [00:02.12]遇见我
+                        [00:05.25]演唱： 曹方
+                        [00:07.25]
+                        [00:20.67]每个人心里都有个领地
+                        [00:23.20]其他人不可以随意来去
+                        [00:25.53]丢掉了我最喜欢的黑色
+                        [00:28.12]耕种着在我阳台所有的花
+                        [00:31.38]
+                        [00:35.52]这些年一个人来来去去
+                        [00:37.97]我不禁看看我的天空里
+                        [00:40.49]这一边是读不懂的忧郁
+                        [00:43.05]那一边是大太阳高挂的画
+                        [00:46.57]
+                        [00:49.93]在记忆的慢车里穿梭
+                        [00:54.63]是雨水它让人坚强
+                        [00:59.62]路总是越走越远
+                        [01:01.65]城市和花园
+                        [01:03.22]我自由的标签
+                        [01:05.33]在这里或那里
+                        [01:07.99]勇敢着
+                        [01:09.80]秋天转眼已不见
+                        [01:11.49]遗落的枫叶
+                        [01:13.13]飘在灰色天空
+                        [01:15.50]阳光会在下个季节遇见我
+                        [01:18.22]
+                        [01:35.54]每个人心里都有个领地
+                        [01:38.09]其他人不可以随意来去
+                        [01:40.53]丢掉了我最喜欢的黑色
+                        [01:43.06]耕种着在我阳台所有的花
+                        [01:46.12]
+                        [01:50.54]这些年一个人来来去去
+                        [01:53.09]我不禁看看我的天空里
+                        [01:55.61]这一边是读不懂的忧郁
+                        [01:58.18]那一边是大太阳高挂的画
+                        [02:00.22]
+                        [02:04.83]在记忆的慢车里穿梭
+                        [02:09.48]是雨水它让人坚强
+                        [02:14.85]路总是越走越远
+                        [02:16.61]城市和花园
+                        [02:18.08]我自由的标签
+                        [02:20.47]在这里或那里
+                        [02:23.04]勇敢着
+                        [02:24.64]秋天转眼已不见
+                        [02:26.46]遗落的枫叶
+                        [02:28.11]飘在灰色天空
+                        [02:30.55]阳光会在下个季节遇见我
+                        [02:31.22]
+                        [02:36.23]我会信守承诺
+                        [02:41.16]直到你来看我
+                        [02:49.76]路总是越走越远
+                        [02:51.68]城市和花园
+                        [02:53.25]我自由的标签
+                        [02:55.75]在这里或那里
+                        [02:58.34]勇敢着
+                        [03:00.12]秋天转眼已不见
+                        [03:01.92]遗落的枫叶
+                        [03:03.29]飘在灰色天空
+                        [03:05.60]阳光会在下个季节亲吻我
+                        [03:10.68]
+                    </textarea>
+                         <div class="music_box">
+                             <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                             <div id="jp_container_1" class="jp-audio">
+                                 <div class="jp-type-single">
+                                     <div class="jp-gui jp-interface">
+                                         <ul class="jp-controls">
+                                             <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                             <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                             <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                                             <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                                             <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                                             <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                                         </ul>
+                                         <div class="jp-progress">
+                                             <div class="jp-seek-bar">
+                                                 <div class="jp-play-bar"></div>
+                                             </div>
+                                         </div>
+                                         <div class="jp-volume-bar">
+                                             <div class="jp-volume-bar-value"></div>
+                                         </div>
+                                         <div class="jp-time-holder">
+                                             <div class="jp-current-time"></div>
+                                             <div class="jp-duration"></div>
+                                             <ul class="jp-toggles">
+                                                 <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+                                                 <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                     <div class="jp-title">
+                                         <ul>
+                                             <li>素材目录网</li>
+                                         </ul>
+                                     </div>
+                                     <div class="jp-no-solution"> <span>Update Required</span> To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>. </div>
+                                 </div>
+                             </div>
+                             <div class="content">
+                                 <ul id="lrc_list">
+                                     <li>点击开始播放……</li>
+                                 </ul>
+                             </div>
+                         </div><!--f-->
+                    </div>
+                <footer>
+                    <p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 templatemo-copyright">Copyright &copy; 9527 Your Company Name Collect from <br /><a href="http://10.212.164.170:9527/" title="我的空间" target="_blank">我的空间</p>
+                </footer>
+            </div>	
+		</div> <!-- right section -->
+	</div>	
+</body>
+</html>

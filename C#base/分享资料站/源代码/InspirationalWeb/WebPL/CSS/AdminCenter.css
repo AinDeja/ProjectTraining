@@ -1,0 +1,146 @@
+﻿
+body{
+     margin:0;
+    padding:0;
+    height:100%;
+
+}
+a{
+    color:#0094ff;
+    text-decoration:none;
+}
+ul{
+    list-style:none;
+}
+#top{
+    height:110px;
+    width:100%;
+    background:url(/WebPL/Images/loginGIF.gif) no-repeat center top;
+
+}
+#Main{
+    min-height:500px;
+     height:auto;
+    width:100%;
+
+}
+#leftList{
+  min-height:500px;
+    height:auto;
+    width:10%;
+    float:left;
+    border-right:#0094ff solid 2px;
+
+}
+#rightMain{
+    padding-top:50px;
+  min-height:500px;
+     height:auto;
+    width:88%;
+    float:left;
+
+}
+.tbList{
+    margin:0 auto;
+    text-align:center;
+    width:750px;
+        overflow: scroll;
+
+}
+
+.tbList tr{
+    margin-top:2px;
+}
+
+
+.tbList .mtr td{
+
+    width:230px;
+    height:24px;
+
+}
+.tbList .mtr td p{
+
+    width:230px;
+    height:24px;
+        text-overflow: ellipsis;
+
+overflow: hidden;
+}
+
+.tbList .mtr:hover{
+    background-color:#ccc;
+    color:#000;
+}
+
+.tbList .umtr td{
+    width:80px;
+}
+.tbList .umtr:hover{
+    background-color:#ccc;
+    color:#ccc;
+}
+.tbList a{
+    color:#000;
+}
+.tbList a:hover{
+    color:#ff0000;
+}
+.tbpage{
+    margin:0 auto;
+    
+}
+
+
+#father{
+    width:250px;
+    height:310px;
+       margin-left:15px;
+    margin-top:30px;
+    padding-top:15px;
+    padding-left:18px;
+    line-height:40px;
+    float:left;
+
+}
+#father dt{
+    font-size:20px;
+}
+#father span{
+    margin-left:20px;
+    float:right;
+}
+
+#son{
+    width:300px;
+    height:310px;
+      padding-top:15px;
+    padding-left:18px;
+    float:left;
+    line-height:30px;
+    
+    margin-left:30px;
+    margin-top:30px;
+
+    line-height:30px;
+
+}
+#son span{
+    margin-left:20px;
+}
+#son dt{
+    font-size:20px;
+}
+#son td{
+   border:solid 1px #000;
+}
+#rightMain{
+
+}
+
+
+img{
+    width:50px;
+    height:50px;
+
+}

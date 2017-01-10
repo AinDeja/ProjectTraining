@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0
+}
+/*-----*/
+body{
+	width:1000px;
+	margin:0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background:url(../img/2bg.png) no-repeat top;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+#top{
+	margin-left:150px;
+	width:800px;
+	height:200px;
+}
+#tnav{
+	float:right;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFF
+	}
+#tnav a{
+	color:#FFF
+	}
+#tnav span{
+	padding:0 10px 0 10px;
+}
+#k{
+	padding:20px 0 80px 0;
+}
+#nav{
+	width:880px;
+	height:40px;
+	margin-top:-10px;
+	background:url(../img/navbg5.png) no-repeat;
+	position: absolute;
+	z-index: 3
+}
+#nav a{
+	color:#42620D
+}
+#nav ul{
+	margin-left:13%
+}
+#nav ul li{
+	display:block;
+	float:left;
+	line-height:40px;
+	height:44px;
+	width:109px;
+	margin:0 -25px 0 0;
+	font-size:14px;
+	text-align:center
+}
+#nav ul li:hover{
+	background: url(../img/navhbg1.png)
+}
+#nav li dd{
+	display:none
+}
+#nav li:hover dd{
+	display:block
+}
+#nav li dd:hover{
+	background: url(../img/navhbg2.png) no-repeat bottom
+}
+#n1{
+	float:right;
+	background:url(../img/22bg.png) no-repeat;	
+	width:664px;
+	height:217px;
+	position: absolute;
+	margin-top:-60px;
+	margin-left:270px;
+	z-index:2
+}
+#nav2{
+	float:left;
+	width:205px;
+	height:986px;
+	background:url(../img/2lnav.png);
+	margin-top:-60px;
+	margin-left:50px
+}
+#nav2 ul{
+	margin:20px 0 0 40px
+}
+#nav2 ul li{
+	background:url(../img/grnav.png) no-repeat center;
+	width:118px;
+	height:31px;
+	margin-top:3px;
+	line-height:31px;
+	text-align:center;
+	font-weight: bold;
+	font-size:14px;	
+		}
+.nav2 a{
+		color:#FFF;
+}
+#nav2 dt{	
+    text-align:center;
+	font-weight: bold;	
+	margin-top:30px;
+	color:#426C00;
+	margin-bottom:10px
+}
+.c1{
+	background:url(../img/linbg.png) no-repeat left;
+	text-align:center;
+	width:95px;
+	margin-left:30%;
+	line-height:25px;
+	font-size:14px
+}
+.c1 a{
+	color:#49740B
+}
+#tt{
+	width:665px;
+	height:500px;
+	margin:170px 65px 0 0;
+	float:right;
+}
+
+#tt1{
+	background:url(../img/dqn.png) no-repeat center;
+	width:662px;
+	height:20px;
+	font-size:14px;
+	text-indent:1.5em;
+}
+#tt2{
+	font-size:13px;
+	text-align:right;
+	margin-top:5px;
+	padding-right:30px;
+}
+#tt2 img{
+	vertical-align:bottom
+}
+#tt2 input{
+	width:14px;
+	height:14px;
+}
+#tt dl{
+	float:left;
+	text-align:center;
+	padding:5px;
+	margin-top:10px;
+	font-size:12px
+}
+#tt dt{
+	padding:5px;
+	background-color:#FFF;
+	border:1px #BEBEBE  solid
+}
+#tt dd{
+	margin:5px 0 2px 0
+}
+#ft{
+	clear:both;
+	padding-top:5px
+}
+#foot{
+	background:url(../img/footer.png) no-repeat center;
+	width:1000px;
+	height:114px;
+	line-height:25px;
+	font-size:12px;
+	text-align:center;
+	padding-top:30px;
+	clear:both
+}
+#foot span{
+	margin:0 10px 0 10px
+}
+#foot a{
+	color:#000
+}
+#foot a:hover{
+	color:#6B8834
+}

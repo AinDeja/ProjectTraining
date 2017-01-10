@@ -1,0 +1,96 @@
+﻿/**{
+    margin:  0;
+    padding:  0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+li {
+    list-style:none;
+}
+span{
+    font-size:10px;
+    color:red;
+}
+#login {
+
+    border:1px solid #66D9EF;
+    background: #fff;
+	position:absolute; 
+    top:20%;
+    left:50%;          
+	margin:-100px 0 0 -200px;
+    width: 400px;
+    height: 600px;
+}
+#login img {
+    margin-left: 150px;
+    margin-top: 10px;
+}
+#login form {
+    margin-left: 70px;
+    margin-top: 20px;
+    line-height: 35px;
+    font-size: 20px;
+}
+#login table td.text{
+	width:400px;
+}
+#login input {
+    margin-top: 10px;
+    height: 30px;
+    font-size: 16px;
+}
+.login {
+float:right;
+margin-right:20px;
+}
+.button {
+    float:right;
+    margin-right:25px;
+}
+  }*/
+
+ #register {
+
+    border:1px solid #66D9EF;
+    background: #fff;
+	position:absolute; 
+    top:20%;
+    left:50%;          
+	margin:-100px 0 0 -200px;
+    width: 400px;
+    height: 600px;
+}
+#register img {
+    margin-left: 150px;
+    margin-top: 10px;
+}
+#register form {
+    margin-left: 70px;
+    margin-top: 20px;
+    line-height: 35px;
+    font-size: 20px;
+}
+#register table td.text{
+	width:400px;
+}
+#register input {
+    margin-top: 10px;
+    height: 30px;
+    font-size: 16px;
+}
+.register {
+float:right;
+margin-right:20px;
+}
+#register span{
+    color:red;
+}
+.button {
+    float:right;
+    margin-right:25px;
+}

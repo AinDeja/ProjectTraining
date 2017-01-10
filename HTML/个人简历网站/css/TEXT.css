@@ -1,0 +1,103 @@
+h3{
+    height: 25px;
+}
+
+
+
+
+
+
+#text0{
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+    clear: both;
+    position:relative;
+
+}
+#skills{
+    margin: 0 auto;
+    width: 1000px;
+    height: 66px;
+}
+.skill{
+    display: block;
+    width:200px;
+    text-align: left;
+    float: left;
+}
+/*circle*/
+.circle {
+    display: inline-block;
+
+}
+#circle{
+    width: 100%;
+    height: 1px;
+    margin: 0 auto;
+    clear: both;
+    position:relative;
+    top:50px
+}
+.circles-decimals {
+    font-size: .4em;
+}
+/*box border*/
+
+#text1,#text2,#text3,#text4{
+    position: relative;
+    width: 240px;
+    height: 50px;
+    display: block;
+    float: left;
+
+}
+
+.bb,.bb::before, .bb::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.bb {
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 10px;
+    /*background: url("img/Button-White-Large.png") no-repeat 50%/70% rgba(0, 0, 0, 0.1);*/
+    color: #009bca;
+    box-shadow: inset 0 0 0 1px rgba(0, 192, 202, 0.5);
+}
+.bb::before, .bb::after {
+    content: '';
+    /*z-index: -1;*/
+    margin: -5%;
+    box-shadow: inset 0 0 0 2px;
+    animation: clipMe 8s linear infinite;
+}
+.bb::before {
+    animation-delay: -2s;
+}
+.bb:hover::after, .bb:hover::before {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+@keyframes clipMe {
+    0%, 100% {
+        clip: rect(0px, 220.0px, 2px, 0px);
+    }
+    25% {
+        clip: rect(0px, 2px, 220.0px, 0px);
+    }
+    50% {
+        clip: rect(30.0px, 220.0px, 220.0px, 0px);
+    }
+    75% {
+        clip: rect(0px, 220.0px, 220.0px, 30.0px);
+    }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>AinDejavu</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/buttonStyle.css">
+	<link rel="stylesheet" href="css/BG.css">
+
+<script src="js/jquery-1.8.3.min.js"></script>
+
+	<!--星空特效-->
+	<link href="css/StarStyle.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery.fullPage.min.js"></script>
+	<!--星空特效END-->
+	<link rel="stylesheet" href="css/TEXT.css">
+	<!--进度显示特效-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/circle.css">
+    <link rel="stylesheet" type="text/css" href="css/project_show.css">
+
+
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+//		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		'navigation': true,
+		navigationTooltips:['1','2','3','4','5','6','7'],
+		showActiveTooltip:true
+	});
+});
+</script>
+
+
+
+	<style>
+		.section { text-align: center; font: 50px "Microsoft Yahei"; color:#f6f6f6;}
+	</style>
+</head>
+
+<body>
+
+<div id="dowebok">
+
+	<div class="section">
+
+		<h3>创造乐趣</h3>
+		<p>Science is the great antidote to the poison of enthusiasm and superstition. </p>
+		<button class="button button-3d button-primary button-circle button-jumbo" onclick="$.fn.fullpage.moveSectionDown()"><i class="fa fa-thumbs-up">GO!</i></button>
+	<canvas id="canvas"></canvas>
+		<script src="js/StarsCanvas.js"></script>
+	</div>
+
+
+	<div class="section" id="page2">
+
+
+		<div id="text0">
+            <h3>关于我</h3>
+		<p id="text1"><spqn class="bb">姓名：王翔宇</spqn></p>
+		<p id="text2"><spqn class="bb">学历：本科</spqn></p>
+		<p id="text3"><spqn class="bb">年龄：22</spqn></p>
+		<p id="text4"><spqn class="bb">状态：本科在读</spqn></p>
+		</div>
+
+
+
+        <div id="circle">
+            <h4>技能掌握</h4>
+            <div class="circle" id="circles-1"></div>
+            <div class="circle" id="circles-2"></div>
+            <div class="circle" id="circles-3"></div>
+            <div class="circle" id="circles-4"></div>
+            <div class="circle" id="circles-5"></div>
+            <BR>
+            <div id="skills">
+            <span class="skill">JAVA</span>
+            <span class="skill">ASP</span>
+            <span class="skill">C#</span>
+            <span class="skill">CSS</span>
+            <span class="skill">HTML</span>
+            </div>
+        </div>
+
+        <script src="js/circles.js"></script>
+        <script>
+//            var text=[[1],[2],[3],[4],[5],[6]];
+            var colors = [
+                        ['#4F7CC1', '#050D19'],  ['#4F7CC1', '#050D19'],['#4F7CC1', '#050D19'],['#4F7CC1', '#050D19'],['#4F7CC1', '#050D19']
+                    ],
+
+                    circles = [];
+
+            for (var i = 5; i >= 0; i--) {
+                var child = document.getElementById('circles-' + i),
+                        percentage = 31.42 + (i * 15.4),
+
+                        circle = Circles.create({
+                            id:         child.id,
+                            value:      percentage,
+                            radius:     getWidth(),
+                            width:      10,
+                            colors:     colors[i - 1],
+                        });
+
+                circles.push(circle);
+            }
+
+            window.onresize = function(e) {
+                for (var i = 0; i < circles.length; i++) {
+                    circles[i].updateRadius(getWidth());
+                }
+            };
+
+            function getWidth() {
+                return window.innerWidth / 20;
+            }
+
+        </script>
+	</div>
+	<div class="section" id="page3">
+        <br>
+
+		<h3>项目展示</h3>
+
+        <br>
+
+        <div id="showme">
+        <div class="box">
+        <div class="project_show">
+            <img class="project_show_img" src="images/pro_4.png" alt="Image 01">
+            <div class="project_show_caption">
+                <h4 class="project_show_caption_h">个人分享小站</h4>
+                <p class="project_show_caption_p">多媒体+插件调用</p>
+                <a class="project_show_caption_a" href="http://www.helloweba.com/" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+        <div class="box">
+            <div class="project_show">
+                <img class="project_show_img" src="images/pro_6.png" alt="Image 01">
+                <div class="project_show_caption">
+                    <h4 class="project_show_caption_h"><font color=#000>励志分享站</font></h4>
+                    <p class="project_show_caption_p">三层架构</p>
+                    <a class="project_show_caption_a" href="http://www.helloweba.com/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="project_show">
+                <img class="project_show_img" src="images/pro_5.png" alt="Image 01">
+                <div class="project_show_caption">
+                    <h4 class="project_show_caption_h">基础BBS构建 </h4>
+                    <p class="project_show_caption_p">do.net</p>
+                    <a class="project_show_caption_a" href="http://www.helloweba.com/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="box">
+            <div class="project_show">
+                <img class="project_show_img" src="images/pro_1.png" alt="Image 01">
+                <div class="project_show_caption">
+                    <h4 class="project_show_caption_h">温州广厦前端</h4>
+                    <p class="project_show_caption_p">细节决定成败</p>
+                    <a class="project_show_caption_a" href="http://www.helloweba.com/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="project_show">
+                <img class="project_show_img" src="images/pro_2.png" alt="Image 01">
+                <div class="project_show_caption">
+                    <h4 class="project_show_caption_h">长峰家具</h4>
+                    <p class="project_show_caption_p">所学应有所用</p>
+                    <a class="project_show_caption_a" href="http://www.helloweba.com/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="project_show">
+                <img class="project_show_img" src="images/pro_3.png" alt="Image 01">
+                <div class="project_show_caption">
+                    <h4 class="project_show_caption_h">周年纪念</h4>
+                    <p class="project_show_caption_p">学以致用</p>
+                    <a class="project_show_caption_a" href="http://www.helloweba.com/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br><br>
+    </div>
+
+</div>
+
+
+</body>
+</html>

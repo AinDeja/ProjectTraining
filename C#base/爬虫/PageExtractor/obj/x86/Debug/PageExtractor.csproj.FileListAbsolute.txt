@@ -1,0 +1,58 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\App.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor_MarkupCompile.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.g.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\bin\Debug\PageExtractor.exe
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\bin\Debug\PageExtractor.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.exe
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\PropertyWindow.baml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PageExtractor\PageExtractor\obj\x86\Debug\PropertyWindow.g.cs
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.exe
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.pdb
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\PropertyWindow.baml
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\PropertyWindow.g.cs
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\App.g.cs
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor_MarkupCompile.cache
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.g.resources
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.Properties.Resources.resources
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\bin\Debug\PageExtractor.exe
+C:\Users\Administrator\Desktop\PageExtractor\PageExtractor\bin\Debug\PageExtractor.pdb
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.exe
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.pdb
+G:\。NET\素材\PageExtractor\PageExtractor\bin\Debug\PageExtractor.exe
+G:\。NET\素材\PageExtractor\PageExtractor\bin\Debug\PageExtractor.pdb
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.csprojResolveAssemblyReference.cache
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\MainWindow.baml
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\PropertyWindow.baml
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\MainWindow.g.cs
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\PropertyWindow.g.cs
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\App.g.cs
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor_MarkupCompile.cache
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.g.resources
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.Properties.Resources.resources
+G:\。NET\素材\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.csproj.GenerateResource.Cache
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.exe
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.pdb
+G:\。NET\练习源代码\PageExtractor\PageExtractor\bin\Debug\PageExtractor.exe
+G:\。NET\练习源代码\PageExtractor\PageExtractor\bin\Debug\PageExtractor.pdb
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.csprojResolveAssemblyReference.cache
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\MainWindow.baml
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\PropertyWindow.baml
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\MainWindow.g.cs
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\PropertyWindow.g.cs
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\App.g.cs
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor_MarkupCompile.cache
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.g.resources
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.Properties.Resources.resources
+G:\。NET\练习源代码\PageExtractor\PageExtractor\obj\x86\Debug\PageExtractor.csproj.GenerateResource.Cache

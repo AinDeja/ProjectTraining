@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D30E1F58-F419-4FC5-8C32-41DF065752D4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InspirationalWeb</RootNamespace>
+    <AssemblyName>InspirationalWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>WebPL\Plug\UEditor\net\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="uploads\3-140Q3192043-50.jpg" />
+    <Content Include="uploads\3-140R2152F6.jpg" />
+    <Content Include="uploads\3b292df5e0fe99254572c36a35a85edf8db1718a.jpg" />
+    <Content Include="uploads\635840926443069376.jpg" />
+    <Content Include="uploads\635840931878779623.jpg" />
+    <Content Include="uploads\635840932397485491.jpg" />
+    <Content Include="uploads\635840933858976076.jpg" />
+    <Content Include="uploads\635840934539407480.jpg" />
+    <Content Include="uploads\635840934998025717.jpg" />
+    <Content Include="uploads\635840935526932880.jpg" />
+    <Content Include="uploads\635840935859520113.jpg" />
+    <Content Include="uploads\635840935963123269.jpg" />
+    <Content Include="uploads\635840936029766732.jpg" />
+    <Content Include="uploads\635840936089409305.jpg" />
+    <Content Include="uploads\635840943621675782.jpg" />
+    <Content Include="uploads\635840944309328102.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebPL\Admin\AdminArticle.aspx" />
+    <Content Include="WebPL\Admin\AdminArticleType.aspx" />
+    <Content Include="WebPL\Admin\AdminCenter.aspx" />
+    <Content Include="WebPL\Admin\AdminImges.aspx" />
+    <Content Include="WebPL\Admin\AdminLogin.aspx" />
+    <Content Include="WebPL\Admin\AdminMessages.aspx" />
+    <Content Include="WebPL\ArticleList.aspx" />
+    <Content Include="WebPL\CSS\AdminCenter.css" />
+    <Content Include="WebPL\CSS\AdminLogin.css" />
+    <Content Include="WebPL\CSS\Album.css" />
+    <Content Include="WebPL\CSS\ArticleList.css" />
+    <Content Include="WebPL\CSS\ArticleType.css" />
+    <Content Include="WebPL\CSS\ArticleView.css" />
+    <Content Include="WebPL\CSS\CenterArticleList.css" />
+    <Content Include="WebPL\CSS\ImgCarousel.css" />
+    <Content Include="WebPL\CSS\Index.css" />
+    <Content Include="WebPL\CSS\Login.css" />
+    <Content Include="WebPL\CSS\Manage.css" />
+    <Content Include="WebPL\CSS\Register.css" />
+    <Content Include="WebPL\CSS\SetNewArticle.css" />
+    <Content Include="WebPL\CSS\upimg.css" />
+    <Content Include="WebPL\CSS\UserCenter.css" />
+    <Content Include="WebPL\Images\bg.jpg" />
+    <Content Include="WebPL\Images\loginGIF.gif" />
+    <Content Include="WebPL\Images\logo.gif" />
+    <Content Include="WebPL\imgup.aspx" />
+    <Content Include="WebPL\Index.aspx" />
+    <Content Include="WebPL\JS\ImgCarousel.js" />
+    <Content Include="WebPL\JS\jquery-1.8.0.js" />
+    <Content Include="WebPL\JS\jquery.form.js" />
+    <Content Include="WebPL\JS\LoginTop.js" />
+    <Content Include="WebPL\JS\RegisterTop.js" />
+    <Content Include="WebPL\Plug\flashupload\expressInstall.swf" />
+    <Content Include="WebPL\Plug\flashupload\flash-image-upload.htm" />
+    <Content Include="WebPL\Plug\flashupload\swfobject.js" />
+    <Content Include="WebPL\Plug\flashupload\upload.aspx" />
+    <Content Include="WebPL\Plug\flashupload\uploadImage.swf" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\anchor\anchor.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\attachment.css" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\attachment.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\callbacks.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\attachment\fileTypeMaps.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\background\background.css" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\background\background.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\background\background.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\emotion.css" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\emotion.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\emotion.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\images\0.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\gmap\gmap.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\help\help.css" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\help\help.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\help\help.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\image\image.css" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\image\image.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\image\image.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\image\images\center_focus.jpg" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\image\images\left_focus.jpg" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\image\images\none_focus.jpg" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\image\images\right_focus.jpg" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\image\imageUploader.swf" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\internal.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\link\link.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\map\map.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\music\music.css" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\music\music.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\music\music.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\size.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\searchreplace\searchreplace.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\spechars\spechars.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\spechars\spechars.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\table\dragicon.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\table\edittable.css" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\table\edittable.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\table\edittable.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\table\edittd.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\table\edittip.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\tangram.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\template\config.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\template\images\bg.gif" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\template\images\pre0.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\template\images\pre1.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\template\images\pre2.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\template\images\pre3.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\template\images\pre4.png" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\template\template.css" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\template\template.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\template\template.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\video\video.css" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\video\video.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\video\video.js" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\webapp\webapp.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="WebPL\Plug\UEditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\en.js" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\addimage.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\background.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\button.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\copy.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\deletedisable.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\deleteenable.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\imglabel.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\listbackground.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\localimage.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\music.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\en\images\upload.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\zh-cn\images\copy.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\zh-cn\images\imglabel.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\zh-cn\images\music.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\zh-cn\images\upload.png" />
+    <Content Include="WebPL\Plug\UEditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="WebPL\Plug\UEditor\net\WebPL\UserImages2015-11-19\99414a9b-c944-4021-9e3d-fad83e65893f.jpg" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\css\ueditor.css" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\dialogbase.css" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\anchor.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\arrow.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\arrow_down.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\arrow_up.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\button-bg.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\cursor_h.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\cursor_h.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\cursor_v.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\cursor_v.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\filescan.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\highlighted.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\icons-all.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\icons.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\icons.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\lock.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\pagebreak.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\scale.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\spacer.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\sparator_v.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\table-cell-align.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\tangram-colorpicker.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\unhighlighted.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\upload.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\videologo.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\word.gif" />
+    <Content Include="WebPL\Plug\UEditor\themes\default\images\wordpaste.png" />
+    <Content Include="WebPL\Plug\UEditor\themes\iframe.css" />
+    <Content Include="WebPL\Plug\UEditor\third-party\codemirror\codemirror.css" />
+    <Content Include="WebPL\Plug\UEditor\third-party\codemirror\codemirror.js" />
+    <Content Include="WebPL\Plug\UEditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="WebPL\Plug\UEditor\third-party\swfupload\fileprogress.js" />
+    <Content Include="WebPL\Plug\UEditor\third-party\swfupload\swfupload.cookies.js" />
+    <Content Include="WebPL\Plug\UEditor\third-party\swfupload\swfupload.js" />
+    <Content Include="WebPL\Plug\UEditor\third-party\swfupload\swfupload.proxy.js" />
+    <Content Include="WebPL\Plug\UEditor\third-party\swfupload\swfupload.queue.js" />
+    <Content Include="WebPL\Plug\UEditor\third-party\swfupload\swfupload.speed.js" />
+    <Content Include="WebPL\Plug\UEditor\third-party\swfupload\swfupload.swf" />
+    <Content Include="WebPL\Plug\UEditor\third-party\swfupload\swfupload_fp9.swf" />
+    <Content Include="WebPL\Plug\UEditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="WebPL\Plug\UEditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="WebPL\Plug\UEditor\ueditor.all.js" />
+    <Content Include="WebPL\Plug\UEditor\ueditor.all.min.js" />
+    <Content Include="WebPL\Plug\UEditor\ueditor.config.js" />
+    <Content Include="WebPL\Plug\UEditor\ueditor.parse.js" />
+    <Content Include="WebPL\UserImages\2015-11-21\1.jpg" />
+    <Content Include="WebPL\UserImages\2015-11-21\2.jpg" />
+    <Content Include="WebPL\UserImages\2015-11-21\3.jpg" />
+    <Content Include="WebPL\UserImages\2015-11-21\4.jpg" />
+    <Content Include="WebPL\UserImages\2015-11-21\5.jpg" />
+    <Content Include="WebPL\UserImages\2015-11-21\6.jpg" />
+    <Content Include="WebPL\User\ArticleView.aspx" />
+    <Content Include="WebPL\User\ImagesList.aspx" />
+    <Content Include="WebPL\User\Login.aspx" />
+    <Content Include="WebPL\User\SetNewArticle.aspx" />
+    <Content Include="WebPL\User\UserAlbum.aspx" />
+    <Content Include="WebPL\User\UserArticleManage.aspx" />
+    <Content Include="WebPL\User\UserArticleType.aspx" />
+    <Content Include="WebPL\User\UserCenter.aspx" />
+    <Content Include="WebPL\User\UserPhotos.aspx" />
+    <Content Include="WebPL\User\UserRegister.aspx" />
+    <Content Include="WebPL\User\UserUpDate.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\B_Admin.cs" />
+    <Compile Include="BLL\B_User.cs" />
+    <Compile Include="BLL\Distinguish.cs" />
+    <Compile Include="BLL\IndexCtrl.cs" />
+    <Compile Include="BLL\LoginTip.cs" />
+    <Compile Include="BLL\Md5Helper.cs" />
+    <Compile Include="BLL\Navigation.cs" />
+    <Compile Include="DAL\T_Admin.cs" />
+    <Compile Include="DAL\T_Reply.cs" />
+    <Compile Include="DAL\T_ArticleSelect.cs" />
+    <Compile Include="DAL\T_Menu.cs" />
+    <Compile Include="DAL\Sql.cs" />
+    <Compile Include="DAL\T_Img.cs" />
+    <Compile Include="DAL\T_Index.cs" />
+    <Compile Include="DAL\T_User.cs" />
+    <Compile Include="Model\Article.cs" />
+    <Compile Include="Model\img.cs" />
+    <Compile Include="Model\Seat.cs" />
+    <Compile Include="Model\set.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebPL\Admin\AdminArticle.aspx.cs">
+      <DependentUpon>AdminArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\Admin\AdminArticle.aspx.designer.cs">
+      <DependentUpon>AdminArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\Admin\AdminArticleType.aspx.cs">
+      <DependentUpon>AdminArticleType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\Admin\AdminArticleType.aspx.designer.cs">
+      <DependentUpon>AdminArticleType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\Admin\AdminCenter.aspx.cs">
+      <DependentUpon>AdminCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\Admin\AdminCenter.aspx.designer.cs">
+      <DependentUpon>AdminCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\Admin\AdminImges.aspx.cs">
+      <DependentUpon>AdminImges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\Admin\AdminImges.aspx.designer.cs">
+      <DependentUpon>AdminImges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\Admin\AdminMessages.aspx.cs">
+      <DependentUpon>AdminMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\Admin\AdminMessages.aspx.designer.cs">
+      <DependentUpon>AdminMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\ArticleList.aspx.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\ArticleList.aspx.designer.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\img.ashx.cs">
+      <DependentUpon>img.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\imgup.aspx.cs">
+      <DependentUpon>imgup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\imgup.aspx.designer.cs">
+      <DependentUpon>imgup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\Plug\flashupload\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\Plug\flashupload\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\Plug\UEditor\net\Uploader.cs" />
+    <Compile Include="WebPL\User\ArticleView.aspx.cs">
+      <DependentUpon>ArticleView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\User\ArticleView.aspx.designer.cs">
+      <DependentUpon>ArticleView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\User\ImagesList.aspx.cs">
+      <DependentUpon>ImagesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\User\ImagesList.aspx.designer.cs">
+      <DependentUpon>ImagesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\User\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\User\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\User\SetNewArticle.aspx.cs">
+      <DependentUpon>SetNewArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\User\SetNewArticle.aspx.designer.cs">
+      <DependentUpon>SetNewArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\User\UserAlbum.aspx.cs">
+      <DependentUpon>UserAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\User\UserAlbum.aspx.designer.cs">
+      <DependentUpon>UserAlbum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\User\UserArticleManage.aspx.cs">
+      <DependentUpon>UserArticleManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\User\UserArticleManage.aspx.designer.cs">
+      <DependentUpon>UserArticleManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\User\UserArticleType.aspx.cs">
+      <DependentUpon>UserArticleType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\User\UserArticleType.aspx.designer.cs">
+      <DependentUpon>UserArticleType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\User\UserCenter.aspx.cs">
+      <DependentUpon>UserCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\User\UserCenter.aspx.designer.cs">
+      <DependentUpon>UserCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\User\UserPhotos.aspx.cs">
+      <DependentUpon>UserPhotos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\User\UserPhotos.aspx.designer.cs">
+      <DependentUpon>UserPhotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\User\UserRegister.aspx.cs">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\User\UserRegister.aspx.designer.cs">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPL\User\UserUpDate.aspx.cs">
+      <DependentUpon>UserUpDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPL\User\UserUpDate.aspx.designer.cs">
+      <DependentUpon>UserUpDate.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WebPL\Plug\UEditor\net\fileUp.ashx" />
+    <Content Include="WebPL\Plug\UEditor\net\getContent.ashx" />
+    <Content Include="WebPL\Plug\UEditor\net\getMovie.ashx" />
+    <Content Include="WebPL\Plug\UEditor\net\getRemoteImage.ashx" />
+    <Content Include="WebPL\Plug\UEditor\net\imageManager.ashx" />
+    <Content Include="WebPL\Plug\UEditor\net\imageUp.ashx" />
+    <Content Include="WebPL\Plug\UEditor\net\scrawlUp.ashx" />
+    <Content Include="WebPL\Plug\UEditor\net\Web.config" />
+    <Content Include="WebPL\img.ashx" />
+    <Content Include="WebPL\Plug\flashupload\uploadImage.mxml" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>48111</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:45827/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:45827/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

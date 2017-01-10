@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<head>
+	
+	<title>Testimonials - Black White HTML5 Template</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">	
+
+    <style>
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+            display: block;
+        }
+
+        audio, canvas, progress, video {
+            display: inline-block;
+            vertical-align: baseline;
+        }
+
+            audio:not([controls]) {
+                display: none;
+                height: 0;
+            }
+
+        [hidden], template {
+            display: none;
+        }
+
+        a {
+            background: transparent;
+        }
+
+            a:active, a:hover {
+                outline: 0;
+            }
+
+        abbr[title] {
+            border-bottom: 1px dotted;
+        }
+
+        b, strong {
+            font-weight: bold;
+        }
+
+        dfn {
+            font-style: italic;
+        }
+
+        /*h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+        }*/
+
+        mark {
+            background: #ff0;
+            color: #000;
+        }
+
+        small {
+            font-size: 80%;
+        }
+
+        sub, sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        img {
+            border: 0;
+        }
+
+        svg:not(:root) {
+            overflow: hidden;
+        }
+
+        figure {
+            margin: 1em 40px;
+        }
+
+        hr {
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            height: 0;
+        }
+
+        pre {
+            overflow: auto;
+        }
+
+        code, kbd, pre, samp {
+            font-family: monospace, monospace;
+            font-size: 1em;
+        }
+
+        button, input, optgroup, select, textarea {
+            color: inherit;
+            font: inherit;
+            margin: 0;
+        }
+
+        button {
+            overflow: visible;
+        }
+
+        button, select {
+            text-transform: none;
+        }
+
+        button, html input[type="button"], input[type="reset"], input[type="submit"] {
+            -webkit-appearance: button;
+            cursor: pointer;
+        }
+
+            button[disabled], html input[disabled] {
+                cursor: default;
+            }
+
+            button::-moz-focus-inner, input::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+        input {
+            line-height: normal;
+        }
+
+            input[type="checkbox"], input[type="radio"] {
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 0;
+            }
+
+            input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+                height: auto;
+            }
+
+            input[type="search"] {
+                -webkit-appearance: textfield;
+                -moz-box-sizing: content-box;
+                box-sizing: content-box;
+            }
+
+                input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+                    -webkit-appearance: none;
+                }
+
+        fieldset {
+            border: 1px solid #c0c0c0;
+            margin: 0 2px;
+            padding: 0.35em 0.625em 0.75em;
+        }
+
+        legend {
+            border: 0;
+            padding: 0;
+        }
+
+        textarea {
+            overflow: auto;
+        }
+
+        optgroup {
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        td, th {
+            padding: 0;
+        }
+    </style>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Oswald:300);
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #1f323e;
+            background: radial-gradient(80% 0%, ellipse cover, #426168 0%, rgba(49, 67, 74, 0.1) 100%), radial-gradient(20% 100%, ellipse cover, #080d11 0%, #243a43 100%);
+        }
+
+        body {
+           
+        }
+
+        video {
+            border-radius: 6px;
+        }
+
+        /* video container */
+        .videoContainer {
+            width:380px;
+            height:auto;
+            position: relative;
+            overflow: hidden;
+            background: #000;
+            color: #ccc;
+            border-radius: 6px;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            margin: 50px auto 0;
+        }
+
+            .videoContainer:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3);
+                z-index: 6;
+                border-radius: 6px;
+                pointer-events: none;
+            }
+
+        /* video caption css */
+        .caption {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 5px 10px;
+            color: #ddd;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.4);
+            text-transform: uppercase;
+            border-radius: 6px 6px 0 0;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+        }
+
+        /*** VIDEO CONTROLS CSS ***/
+        /* control holder */
+        .control {
+            color: #ccc;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 360px;
+            z-index: 5;
+            display: none;
+        }
+
+        /* control bottom part */
+        .btmControl {
+            clear: both;
+        }
+
+        .control .btnPlay {
+            float: left;
+            width: 34px;
+            height: 30px;
+            padding: 5px;
+            background: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            border-radius: 6px 0 0 6px;
+            border: 1px solid rgba(0, 0, 0, 0.7);
+            box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5);
+        }
+
+        .control .icon-play {
+            background: url(css/vp_sprite.png) no-repeat -11px 0;
+            width: 6px;
+            height: 9px;
+            display: block;
+            margin: 5px 0 0 10px;
+        }
+
+        .control .icon-pause {
+            background: url(css/vp_sprite.png) no-repeat -34px -1px;
+            width: 8px;
+            height: 9px;
+            display: block;
+            margin: 4px 0 0 8px;
+        }
+
+        .control .selected {
+            font-size: 15px;
+            color: #ccc;
+        }
+
+        .control .sound {
+            width: 30px;
+            height: 30px;
+            float: left;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 0, 0, 0.7);
+            border-left: none;
+            box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+
+        .control .icon-sound {
+            background: url(css/vp_sprite.png) no-repeat -19px 0;
+            width: 13px;
+            height: 10px;
+            display: block;
+            margin: 3px 0 0 -2px;
+        }
+
+        .control .muted .icon-sound {
+            width: 7px !important;
+        }
+
+        .control .btnFS {
+            width: 30px;
+            height: 30px;
+            border-radius: 0 6px 6px 0;
+            float: left;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 0, 0, 0.7);
+            border-left: none;
+            box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5);
+        }
+
+        .control .icon-fullscreen {
+            background: url(css/vp_sprite.png) no-repeat 0 0;
+            width: 10px;
+            height: 10px;
+            display: block;
+            margin: 3px 0 0 -3px;
+        }
+
+        /* PROGRESS BAR CSS */
+        /* Progress bar */
+        .progress-bar {
+            height: 30px;
+            width: auto;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(0, 0, 0, 0.7);
+            border-left: none;
+            box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.5);
+            float: left;
+        }
+
+        .progress {
+            width: 240px;
+            height: 7px;
+            position: relative;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.4);
+            /* fallback */
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 1px 1px black;
+            border-radius: 10px;
+        }
+
+            .progress span {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                border-radius: 10px;
+            }
+
+        .timeBar {
+            z-index: 10;
+            width: 0;
+            background: -webkit-linear-gradient(top, #6bcce2 0%, #1da3d0 100%);
+            box-shadow: 0 0 7px rgba(107, 204, 226, 0.5);
+        }
+
+        .bufferBar {
+            z-index: 5;
+            width: 0;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* VOLUME BAR CSS */
+        /* volume bar */
+        .volume {
+            position: relative;
+            cursor: pointer;
+            width: 70px;
+            height: 10px;
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .volumeBar {
+            display: block;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #eee;
+            z-index: 10;
+        }
+        #BigBox {
+            width:500px;
+            height:auto;
+           margin-top:150px;
+        }
+    </style>
+    <script src="js/prefixfree.min.js"></script>
+</head>
+<body>
+	<div class="templatemo-logo visible-xs-block">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg logo-left-container">
+			<h1 class="logo-left">Black</h1>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg logo-right-container">
+			<h1 class="logo-right">White</h1>
+		</div>			
+	</div>
+	<div class="templatemo-container">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg left-container">
+			<h1 class="logo-left hidden-xs margin-bottom-60">呆熊</h1>	
+			<div class="tm-left-inner-container">
+				<ul class="nav nav-stacked templatemo-nav">
+				  <li><a href="index.html"><i class="fa fa-home fa-medium"></i>有关分享</a></li>
+				  <li><a href="products.html"><i class="fa fa-shopping-cart fa-medium"></i>文章</a></li>
+				  <li><a href="services.html"><i class="fa fa-send-o fa-medium"></i>音乐</a></li>
+				  <li><a href="testimonials.html" class="active"><i class="fa fa-comments-o fa-medium"></i>视频</a></li>
+				</ul>
+			</div>
+		</div> <!-- left section -->
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg right-container">
+			<h1 class="logo-right hidden-xs margin-bottom-60">周分享</h1>
+			<div class="tm-right-inner-container">
+		     
+
+
+                <embed src="http://player.youku.com/player.php/sid/XMTI3OTMyNTY2NA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"></embed>
+
+
+
+
+
+
+
+
+                <footer>
+                    <p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 templatemo-copyright">Copyright &copy; 9527 Your Company Name Collect from <br /><a href="http://10.212.164.170:9527/" title="我的空间" target="_blank">我的空间</p>
+                </footer>
+			</div>	
+		</div> <!-- right section -->
+	</div>	
+
+</body>
+</html>

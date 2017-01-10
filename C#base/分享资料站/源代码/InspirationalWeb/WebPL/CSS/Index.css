@@ -1,0 +1,380 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+html{
+    background-color:#fff;
+}
+body {
+	width: 900px;
+	height:100%;
+	margin: 0 auto;
+	background:url(/WebPL/Images/bg.jpg) center no-repeat;
+	background-position:top;
+            background-color:#E1F2FC;
+}
+a {
+	text-decoration:none;
+}
+li {
+	list-style:none;
+}
+#top {
+	width: 900px;
+	height: 36px;
+	background-color:#CFF;
+	opacity: 0.4;
+	z-index: 199;
+    position:fixed;
+}
+#top ul li{
+	float:left;
+	margin-left:10px;
+	margin-top:5px;
+	font-size:16px;
+	font-family:"微软雅黑";
+}
+#top ul li a{
+	color:#000;
+}
+#top ul li a:hover{
+	color:#30C;
+}
+#top ul.logic {
+	float:right;
+}
+#top ul.logic li {
+	float:left;
+	margin-right:10px;
+}
+#login{
+    
+    list-style:none;
+    float:right;
+}
+#login li{
+    margin-right:10px;
+    float:left;
+}
+#head {
+	width: 100%;
+	height:150px;
+	
+}
+#head img.logo{
+	margin-left:20px;
+	margin-top:45px;
+	float:left;
+}
+#head p {
+	display:block;
+	margin-left:140px;
+	padding-top:70px;
+	font-family:"微软雅黑";
+	font-size:22px;
+	font-weight:500;
+}
+#head #lead{
+	width:900px;
+	height:35px;
+	float:left;
+	color:#666;
+	margin-top:4px;
+}
+#head #lead li{
+	display:inline;
+	float:left;
+	margin-left:20px;
+	margin-top:1px;
+}
+#head #lead li a{
+	font-family:"宋体";
+	font-size:20px;
+	color:#666;
+}
+#con {
+    width: 900px;
+    min-height: 900px;
+    height:auto;
+            background-color:#E1F2FC;
+}
+#left {
+    width: 140px;
+   height:auto;
+    margin-left:30px;
+    margin-top:30px;
+    margin-right:30px;
+float: left;
+}
+.menu {
+font-family: arial, sans-serif;
+width:140px;
+margin:0;
+float: left;
+}
+
+.menu ul {
+	width:140px;
+padding:0;
+margin:0;
+list-style-type: none;
+}
+
+.menu ul li {
+position:relative;
+border-left: 4px solid #146EB4;
+}
+.menu ul li.sort{
+	background: transparent url("http://static.cnblogs.com/images/site_cate_title_bg.png") no-repeat scroll left bottom;
+height: 30px;
+line-height: 30px;
+border-right: 1px solid #83ABC6;
+border-left:none;
+width:144px;
+}
+.menu ul li.sort span{
+	margin-left:55px;
+}
+.menu ul li.list{
+	display:block;
+	text-align:center;
+	width:140px;
+height:30px;
+color:#000;
+border:1px solid #fff;
+border-width:1px 1px 0 0;
+background:#CCC;
+line-height:30px;
+border-left: 4px solid #146EB4;
+color: #D8482C;
+}
+.menu ul li.bottom{
+background: transparent url("http://static.cnblogs.com/images/site_cate_bottom_bg.gif") no-repeat scroll left top;
+height: 5px;
+line-height: 0;
+font-size: 0px;
+border-right: 1px solid #83ABC6;
+border-left:none;
+width:144px;
+}
+.menu ul li a, .menu ul li a:visited {
+display:block;
+text-align:center;
+text-decoration:none;
+width:140px;
+height:30px;
+color:#000;
+border:1px solid #fff;
+border-width:1px 1px 0 0;
+background:#CCC;
+line-height:30px;
+font-size:11px;
+}
+
+.menu ul li ul {
+	margin-left:140px;
+	margin-top:-31px;
+display: none;
+z-index:999;
+}
+.menu ul li ul li{
+	border:none;
+    z-index:999;
+}
+
+.menu ul li:hover a {
+color:#000;
+background:#EFF5FC;
+}
+
+.menu ul li:hover ul {
+display:block;
+position:absolute;
+left:0;
+width:105px;
+}
+.menu ul li:hover ul li a {
+display:block;
+background:#EFF5FC;
+border-bottom:1px solid #9FC;
+border-left:1px solid #9FC;
+color:#000;
+}
+
+.menu ul li:hover ul li a:hover {
+color:#900;
+}
+
+  #imgsTurn {
+    width: 600px;
+    height: 243px;
+    background:#000;
+    overflow: hidden; 
+    position: relative; 
+    top: 20px;
+    float:left; 
+  }
+  /* 控制图片大小*/
+  #turnImg{
+      width:100%;
+      height:100%;
+  }
+  #lianjie{
+    width: 140px;
+    height: 300px;
+    background-color: #CCCCCC;
+    float: left;
+    margin-top: 120px;
+    border: 1px solid #999;
+  }
+  #lianjie h1 {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+  #lianjie ul {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  #lianjie ul li{
+    font-size: 14px;
+    line-height: 25px;
+  }
+  #lianjie ul li a{
+    color: #404040;
+  }
+  #lianjie ul li a:hover {
+    color: #C39951;
+  }
+  #right {
+    float: left;
+  }
+  #content {
+    width: 600px;
+    min-height: 300px;
+    height:auto;
+    margin-top: 540px;
+    position: relative;
+  }
+  #content h1 {
+    font-size: 20px;
+    color: #333;
+  }
+  #content h2 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  #content p {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+    height: 30px;
+    border-bottom: 1px dashed #B8B8B8;
+    text-indent:4em;
+/*控制文本显示量*/
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+
+
+    
+  }
+  #content p a {
+    margin-left: 4px;
+    text-decoration: underline;
+    color: #D7AB62;
+  }
+  #content p a:hover {
+    color: #E33112;
+  }
+  #content p span {
+    
+  }
+  #content h2 a {
+    margin-left: 4px;
+    color: #105CB6;
+    text-decoration: underline;
+  }
+  #content h2 a:hover {
+    color: #E33112;
+  }
+.newArTime{
+     float: right;
+    margin-right: 10px;
+  }
+#footer {
+
+    width: 900px;
+    height: 58px;
+    background-color:#F0F9FE;
+    padding-top: 30px;
+    border-top: 2px solid #DAE6C3;
+
+  }
+  #footer p {
+    line-height: 25px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 14px;
+  }
+  #footer p.address {
+    margin-top: -10px;
+  }
+  #footer p a {
+    text-decoration: underline;
+    color:#F8800A;
+  }
+  
+  #register {
+
+    border:1px solid #66D9EF;
+    background: #fff;
+	position:absolute; 
+    top:20%;
+    left:50%;          
+	margin:-100px 0 0 -200px;
+    width: 400px;
+    height: 600px;
+}
+#register img {
+    margin-left: 150px;
+    margin-top: 10px;
+}
+#register form {
+    margin-left: 70px;
+    margin-top: 20px;
+    line-height: 35px;
+    font-size: 20px;
+}
+#register table td.text{
+	width:400px;
+}
+#register input {
+    margin-top: 10px;
+    height: 30px;
+    font-size: 16px;
+}
+.register {
+float:right;
+margin-right:20px;
+}
+#register span{
+    color:red;
+}
+.button {
+    float:right;
+    margin-right:25px;
+}
+ /* #login {
+
+    border:1px solid #66D9EF;
+    background: #fff;
+	position:absolute; 
+    top:50%;
+    left:50%;          
+	margin:-200px 0 0 -175px;
+    width: 400px;
+    height: 350px;
+	
+}*/

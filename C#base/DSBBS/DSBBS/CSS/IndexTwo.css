@@ -1,0 +1,357 @@
+﻿body {
+    margin:0 auto;
+    padding:0;
+    background-image:url(/Images/bg.jpeg);
+    
+
+}
+
+
+#unbody{
+    margin-top:33px;
+    /*background-color:#ccc;*/
+
+}
+#ruturntop{
+    width:50px;
+    height:50px;
+    line-height:20px;
+    background-color:rgba(255, 255, 255, 0.75);
+    position:fixed;
+    
+     margin:auto;
+     right:5px;
+     bottom:0px;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+#top {
+    
+    height:33px;
+    background-color:#ccc;
+    z-index: 199;
+    position:fixed;
+    /*解决position后无法自动居中问题*/
+     margin:auto;
+     left:0px;
+     right:0px;
+     top:0px;
+/**/
+    opacity: 0.85;
+
+}
+/*TOP选项*/
+#collect
+{
+    margin-top:5px;
+    
+    list-style:none;
+    float:left;
+}
+#collect li{
+    margin-right:10px;
+    float:left;
+}
+#login{
+    margin-top:5px;
+    
+    list-style:none;
+    float:right;
+}
+#login li{
+    margin-right:10px;
+    float:left;
+}
+
+
+
+
+#logo{
+    z-index: 5;
+    margin:auto ;
+    height:200px;
+    width:800px;
+
+   
+}
+#mainBg{
+    margin:auto ;
+     width:800px;
+    background-color:#ffffff;
+    /*opacity: 0.45;*/
+    background:rgba(120,120,120,0.7);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    margin-bottom:50px;
+}
+#main{
+    z-index:5;
+    margin:auto ;
+    width:800px;
+     /*background-color:#ff006e;*/
+
+    
+}
+/*用户登录*/
+.loginUser{
+    margin:auto;
+    width:400px;
+    height:200px;
+    line-height:50px;
+    color:#ffffff;
+
+}
+#loginwin{
+    margin-top:3px;
+    padding-bottom:20px;
+
+}
+
+/*注册*/
+#register{
+    padding-top:10px;
+    padding-bottom:20px;
+    color:#ffffff;
+}
+/*#yc{
+    margin-top:10px;
+    width:400px;
+    height:200px;
+    float:left;
+}
+#zz{
+    margin-top:10px;
+     width:400px;
+    height:200px;
+    float:left;
+}*/
+
+/*板块*/
+#typeTable {
+    margin:0 auto;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.postType{
+    clear:both;
+    width:150px;
+    height:50px;
+    font-size:26px;
+    color:#ffffff;
+   background-color:rgba(0, 0, 0, 0.60);
+   margin:5px;
+   text-align:center;
+   line-height:50px;
+   border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.postType:hover{
+    background-color:#ffffff;
+    color:#000;
+    font-weight:bold;
+
+}
+
+
+/*帖子发表编辑*/
+#pubPost{
+    margin:auto;
+    width:770px;
+    text-align:center;
+    color:#FFFFFF;  
+    font-size:30px;
+}
+
+/*发帖*/
+#ft{
+    line-height:50px;  width:50px;height:50px;
+    margin-top:20px;
+    font-size:20px;
+    font-weight:bold;
+    color:#000;
+    background-color:rgba(255, 255, 255, 0.65);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+#ft:hover{
+    color:#ff0000;
+}
+
+
+.tbpage
+{
+  
+    text-align:center;
+
+    width:800px;
+    margin-top:0;
+    background-color:#000
+
+}
+.tbpage a{
+    color:#ffffff;
+}
+.tbpage a:hover{
+    color:#ff0000;
+}
+/*帖子列表*/
+.tbList{
+    margin:0 auto;
+    text-align:center;
+    color:rgba(255, 255, 255, 0.85);   
+    width:700px;
+
+}
+
+.tbList tr{
+    margin-top:2px;
+}
+
+
+.tbList .mtr td{
+    width:230px;
+    height:80px;
+}
+
+.tbList .mtr:hover{
+    background-color:#ccc;
+    color:#000;
+}
+
+.tbList .umtr td{
+    width:80px;
+}
+.tbList .umtr:hover{
+    background-color:#ccc;
+    color:#000;
+}
+.tbList a{
+    color:#ffffff;
+}
+.tbList a:hover{
+    color:#ff0000;
+}
+
+/*回复*/
+#reply {
+   /*div紧贴边框右下角 float: right;width:100%;*/
+   float: right;
+   width:100%;
+   margin:0 10px 10px 0;
+}
+/*贴子浏览*/
+#postview{
+    margin:0 auto;
+    padding-top:40px;
+     padding-bottom:40px;
+
+}
+#box1{
+    
+
+    width:750px;
+    min-height:160px;
+
+    background-color:rgba(204, 204, 204, 0.40);
+    color:#000;
+    overflow:hidden;
+    padding:0;
+
+
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+#leftname{
+    width:150px;
+    height:100%;
+    font-size:25px;
+    text-align:center;
+    padding-top:30px;
+
+    float:left;
+    overflow:hidden;
+}
+#datefloor{
+    width:600px;
+    /*height:100px;*/
+
+    float:left;
+    padding-top:5px;
+    overflow: visible;
+}
+#textbox{
+    width:520px;
+    min-height:140px;
+    background-color:rgba(255, 255, 255, 0.77);
+    color:#000;
+    /*text-align:center;*/
+    text-indent:2em;
+    padding-left:5px;
+    padding-right:5px;
+    float:left;
+    overflow:visible;
+    /*解决CKEDITOR行输入过长无法自动换行的问题*/
+    word-break:break-all;
+
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+
+#usermess{
+    width:300px;
+    margin:0 auto;
+    line-height:50px;
+    color:#ffffff;
+}
+
+
+/*帖子管理列表*/
+.editList{
+    margin:auto;
+    margin-top:8px;
+
+    text-align:center;
+    color:rgba(255, 255, 255, 0.85);   
+}
+
+.editList tr{
+    margin-top:2px;
+    height:80px;
+}
+
+.editList .mtr td{
+    width:100px;
+}
+
+.editList .mtr:hover{
+    background-color:#ccc;
+    color:#000;
+}
+
+.editList .umtr td{
+    width:80px;
+}
+.editList .umtr:hover{
+    background-color:#ccc;
+    color:#000;
+}
+.editList a{
+    color:#ffffff;
+}
+.editList a:hover{
+    color:#ff0000;
+}

@@ -1,0 +1,6 @@
+G:\。NET\练习源代码\简易在线考试系统\TestForNet\TestForNet\bin\TestForNet.dll.config
+G:\。NET\练习源代码\简易在线考试系统\TestForNet\TestForNet\bin\TestForNet.dll
+G:\。NET\练习源代码\简易在线考试系统\TestForNet\TestForNet\bin\TestForNet.pdb
+G:\。NET\练习源代码\简易在线考试系统\TestForNet\TestForNet\obj\Debug\TestForNet.dll
+G:\。NET\练习源代码\简易在线考试系统\TestForNet\TestForNet\obj\Debug\TestForNet.pdb
+G:\。NET\练习源代码\简易在线考试系统\TestForNet\TestForNet\obj\Debug\TestForNet.csprojResolveAssemblyReference.cache

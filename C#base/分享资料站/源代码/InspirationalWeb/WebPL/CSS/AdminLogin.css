@@ -1,0 +1,34 @@
+﻿/*body{
+    background:url(/WebPL/Images/logo.gif) ;
+    opacity:0.6;//DOM透明度
+}
+li*/ {
+    list-style:none;
+}
+
+#divLogin {
+
+    border:1px solid #66D9EF;
+    background: #fff;
+	position:absolute; 
+    top:50%;
+    left:50%;          
+	margin:-200px 0 0 -220px;
+        width: 455px;
+    height: 350px;
+    line-height:55px;
+    background:url(/WebPL/Images/loginGIF.gif) no-repeat center top;
+}
+#divLogin table{
+     margin-top:150px;
+}
+#divLogin td{
+     width:150px;
+     height:50px;
+     text-align:right
+}
+
+
+
+
+  }

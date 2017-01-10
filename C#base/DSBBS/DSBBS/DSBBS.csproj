@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C04DCCF1-2A47-4843-9539-3DB4D19FAB3E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DSBBS</RootNamespace>
+    <AssemblyName>DSBBS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CKEditor.NET, Version=3.6.6.2, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminIndex.aspx" />
+    <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\ApostEdit.aspx" />
+    <Content Include="Admin\AuserMess.aspx" />
+    <Content Include="Admin\EditAdmin.aspx" />
+    <Content Include="Admin\EditAdminMess.aspx" />
+    <Content Include="Admin\EditPost.aspx" />
+    <Content Include="Admin\EditPostType.aspx" />
+    <Content Include="Admin\EditUser.aspx" />
+    <Content Include="Admin\Head.aspx" />
+    <Content Include="Admin\SysAdmin.aspx" />
+    <Content Include="Admin\UserAdmin.aspx" />
+    <Content Include="CSS\IndexTwo.css" />
+    <Content Include="flash\we.swf" />
+    <Content Include="flash\yc.swf" />
+    <Content Include="flash\zz.swf" />
+    <Content Include="HTML\Foot.aspx" />
+    <Content Include="HTML\Head.aspx" />
+    <Content Include="HTML\HeadTwo.aspx" />
+    <Content Include="HTML\Login.aspx" />
+    <Content Include="HTML\PostList.aspx" />
+    <Content Include="HTML\PostReply.aspx" />
+    <Content Include="HTML\PostView.aspx" />
+    <Content Include="HTML\Publish.aspx" />
+    <Content Include="HTML\Register.aspx" />
+    <Content Include="HTML\UserIndex.aspx" />
+    <Content Include="HTML\UserMess.aspx" />
+    <Content Include="HTML\UserPost.aspx" />
+    <Content Include="Images\bg.jpeg" />
+    <Content Include="IndexTwo.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminIndex.aspx.cs">
+      <DependentUpon>AdminIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminIndex.aspx.designer.cs">
+      <DependentUpon>AdminIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ApostEdit.aspx.cs">
+      <DependentUpon>ApostEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ApostEdit.aspx.designer.cs">
+      <DependentUpon>ApostEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AuserMess.aspx.cs">
+      <DependentUpon>AuserMess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AuserMess.aspx.designer.cs">
+      <DependentUpon>AuserMess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditAdmin.aspx.cs">
+      <DependentUpon>EditAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditAdmin.aspx.designer.cs">
+      <DependentUpon>EditAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditAdminMess.aspx.cs">
+      <DependentUpon>EditAdminMess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditAdminMess.aspx.designer.cs">
+      <DependentUpon>EditAdminMess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditPost.aspx.cs">
+      <DependentUpon>EditPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditPost.aspx.designer.cs">
+      <DependentUpon>EditPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditPostType.aspx.cs">
+      <DependentUpon>EditPostType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditPostType.aspx.designer.cs">
+      <DependentUpon>EditPostType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Head.aspx.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Head.aspx.designer.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SysAdmin.aspx.cs">
+      <DependentUpon>SysAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SysAdmin.aspx.designer.cs">
+      <DependentUpon>SysAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserAdmin.aspx.cs">
+      <DependentUpon>UserAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserAdmin.aspx.designer.cs">
+      <DependentUpon>UserAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Foot.aspx.cs">
+      <DependentUpon>Foot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Foot.aspx.designer.cs">
+      <DependentUpon>Foot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Head.aspx.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Head.aspx.designer.cs">
+      <DependentUpon>Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\HeadTwo.aspx.cs">
+      <DependentUpon>HeadTwo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\HeadTwo.aspx.designer.cs">
+      <DependentUpon>HeadTwo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\PostList.aspx.cs">
+      <DependentUpon>PostList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\PostList.aspx.designer.cs">
+      <DependentUpon>PostList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\PostReply.aspx.cs">
+      <DependentUpon>PostReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\PostReply.aspx.designer.cs">
+      <DependentUpon>PostReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\PostView.aspx.cs">
+      <DependentUpon>PostView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\PostView.aspx.designer.cs">
+      <DependentUpon>PostView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Publish.aspx.cs">
+      <DependentUpon>Publish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Publish.aspx.designer.cs">
+      <DependentUpon>Publish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\UserIndex.aspx.cs">
+      <DependentUpon>UserIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\UserIndex.aspx.designer.cs">
+      <DependentUpon>UserIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\UserMess.aspx.cs">
+      <DependentUpon>UserMess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\UserMess.aspx.designer.cs">
+      <DependentUpon>UserMess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\UserPost.aspx.cs">
+      <DependentUpon>UserPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\UserPost.aspx.designer.cs">
+      <DependentUpon>UserPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Distinguish.cs" />
+    <Compile Include="IndexTwo.aspx.cs">
+      <DependentUpon>IndexTwo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexTwo.aspx.designer.cs">
+      <DependentUpon>IndexTwo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1542</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1542/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
